@@ -17,6 +17,7 @@ export const IMAGES = {
   nature: 'https://images.pexels.com/photos/5264383/pexels-photo-5264383.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200',
   art: 'https://images.pexels.com/photos/22820076/pexels-photo-22820076.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200',
   farmers: 'https://images.pexels.com/photos/20356777/pexels-photo-20356777.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200',
+
 };
 
 export const programCategories = [
@@ -51,9 +52,9 @@ export const programCategories = [
         title: 'Digital Literacy Campaign',
         aim: 'Equip rural youth with essential digital skills',
         purpose: 'Bridge the digital divide in tribal communities',
-        method: 'Computer training centers in villages with certified trainers and donated equipment',
+        method: 'Computer training centers in villages with certified trainers and Contributed equipment',
         impact: '1,800+ youth trained in basic to intermediate computer skills',
-        cta: 'Donate a computer',
+        cta: 'Contribute a computer',
         image: IMAGES.education3,
       },
       {
@@ -260,13 +261,33 @@ export const sdgGoals = [
   { number: 17, title: 'Partnerships', description: 'Multi-stakeholder partnerships with government, corporates, and civil society organizations.' },
 ];
 
+
 export const impactStats = [
-  { label: 'Beneficiaries Reached', value: '50,000+', icon: 'Users' },
-  { label: 'Villages Covered', value: '150+', icon: 'MapPin' },
-  { label: 'Projects Completed', value: '25+', icon: 'CheckCircle' },
-  { label: 'Youth Trained', value: '5,000+', icon: 'GraduationCap' },
-  { label: 'Funds Utilized', value: '₹3.5 Cr', icon: 'IndianRupee' },
-  { label: 'Volunteers Engaged', value: '500+', icon: 'Heart' },
+  {
+    label: "Program Implemented",
+    value: "130+",
+    icon: "Briefcase",          // Projects/Programs
+  },
+  {
+    label: "Voluntary Efforts Spent",
+    value: "30K+",
+    icon: "HeartHandshake",     // Volunteer & Community Service
+  },
+  {
+    label: "Sponsored Program Implemented (CSR & Govt)",
+    value: "9+",
+    icon: "Landmark",           // Government & CSR
+  },
+  {
+    label: "Group Members In Networks",
+    value: "1.2+ Lakhs",
+    icon: "Users",              // Members/Community
+  },
+  {
+    label: "Online Ads Impressions",
+    value: "40M+",
+    icon: "Eye",                // Views/Impressions
+  },
 ];
 
 export const leadershipTeam = {
@@ -299,23 +320,27 @@ export const milestones = [
 
 export const successStories = [
   {
-    title: 'From Village to IIT',
-    story: 'Suresh, a tribal student from Kasa, cleared JEE Advanced and joined IIT Bombay after guidance from AYUSH career counseling workshops. Today he mentors other students.',
+    title: "Empowering Tribal Students Through Mentorship",
+    story:
+      "Started by former Ashram school students, AYUSH built a strong mentoring network connecting professionals, alumni, and students. Through career guidance, motivational sessions, and community support, hundreds of tribal youth have been inspired to pursue higher education and professional careers.",
     image: IMAGES.education1,
   },
   {
-    title: 'Warli Art Goes Global',
-    story: 'Rekha, a Warli artist trained through AYUSH workshops, now sells her art internationally through online platforms, earning 10x her previous income.',
-    image: IMAGES.art,
-  },
-  {
-    title: 'Women Leading Change',
-    story: 'The Kasa Women SHG, formed with AYUSH support, now manages a ₹5 Lakh fund and runs a successful tribal food enterprise.',
+    title: "Building a Strong Tribal Community Network",
+    story:
+      "What began as a small grassroots initiative evolved into the Adivasi Yuva Shakti movement and later Adivasi Yuva Seva Sangh. Today, the organization connects tribal communities, professionals, and volunteers to create sustainable solutions through education, social entrepreneurship, and cultural preservation.",
     image: IMAGES.tribal3,
   },
   {
-    title: 'Forest Rights Victory',
-    story: '500 families in Dahanu received individual and community forest rights titles through AYUSH\'s legal aid and documentation support.',
-    image: IMAGES.nature,
+    title: "Preserving Warli Heritage Through Innovation",
+    story:
+      "AYUSH played a pioneering role in securing the Geographical Indication (GI) for Warli Painting, the first GI from Palghar and the first tribal craft to receive this recognition. The initiative now empowers artisans with market access, fair opportunities, and a community-owned brand while protecting their cultural heritage.",
+    image: IMAGES.art,
+  },
+  {
+    title: "Women Empowerment Through Warli Art",
+    story:
+      "With support from CSR partners, AYUSH trained women in Warli painting, product design, and handicraft production. The initiative created flexible income opportunities for homemakers and students while strengthening the traditional role of women in preserving Warli culture.",
+    image: IMAGES.tribal2, // or IMAGES.tribal2 if women image is unavailable
   },
 ];

@@ -15,8 +15,8 @@ export default function Footer() {
   return (
     <footer className="bg-gray-700 text-white">
       {/* Newsletter */}
-      <div className="border-b border-gray-800">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+      <div className="border-b h-[100px] border-gray-800">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <div className="flex flex-col md:flex-row items-center justify-between gap-6">
             <div>
               <h3 className="text-lg font-semibold">Stay Connected</h3>
@@ -37,7 +37,7 @@ export default function Footer() {
       </div>
 
       {/* Main Footer */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-6 py-8">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* About */}
           <div>
@@ -49,8 +49,11 @@ export default function Footer() {
 />
   <div>
     <h3 className="font-bold text-lg">AYUSH</h3>
+    <p className="text-sm text-gray-400 tracking-wider uppercase">
+     Adivasi Yuva Seva Sangh,
+    </p>
     <p className="text-xs text-gray-400 tracking-wider uppercase">
-      Adivasi Yuva Shakti
+     Collaborative social Entrepreneurship platform
     </p>
   </div>
 </div>

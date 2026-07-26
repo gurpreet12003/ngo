@@ -131,7 +131,7 @@ const navItems = [
       },
     ],
   },
-  { label: 'Get Involved', path: '/get-involved' },
+  { label: 'Lets Do It Together', path: '/get-involved' },
   { label: 'Media', path: '/media' },
   { label: 'Contact', path: '/contact' },
 ];
@@ -148,22 +148,8 @@ export default function Header() {
       {/* Top Bar */}
       <div className="hidden lg:block bg-gray-900 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-10">
-            <div className="flex items-center gap-6 text-sm">
-              <a
-                href="mailto:ayush@adiyuva.in"
-                className="hover:text-gray-300 transition"
-              >
-                ayush@adiyuva.in
-              </a>
-
-              <a
-                href="tel:+919246361249"
-                className="hover:text-gray-300 transition"
-              >
-                +91 9246 361 249
-              </a>
-            </div>
+          <div className="flex items-center justify-end h-10">
+            
 
             {/* Social Icons */}
             <div className="flex items-center gap-2">
@@ -219,7 +205,7 @@ export default function Header() {
       {/* Existing Header */}
       <header className="bg-white border-b border-gray-100 sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-16 lg:h-20">
+          <div className="flex items-center justify-between h-16 lg:h-16">
             {/* Logo */}
 
 
@@ -242,7 +228,7 @@ export default function Header() {
                 </h1>
 
                 <p className="text-[10px] lg:text-xs text-gray-500 leading-none tracking-wider uppercase">
-                  Adivasi Yuva Shakti
+                  Adivasi Yuva Seva Sangh
                 </p>
               </div>
             </Link>
@@ -308,7 +294,7 @@ export default function Header() {
                 to="/get-involved"
                 className="hidden sm:inline-flex items-center px-5 py-2 bg-gray-900 text-white text-sm font-medium rounded-full hover:bg-gray-800 transition-colors"
               >
-                Donate
+                Contribute
               </Link>
               <button
                 onClick={() => setMobileOpen(!mobileOpen)}
@@ -366,7 +352,7 @@ export default function Header() {
                 onClick={() => setMobileOpen(false)}
                 className="block w-full text-center py-3 bg-gray-900 text-white text-sm font-medium rounded-full mt-4"
               >
-                Donate Now
+                Contribute Now
               </Link>
             </div>
           </div>

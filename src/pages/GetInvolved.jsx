@@ -76,9 +76,9 @@ export default function GetInvolved() {
   return (
     <div>
       <PageHeader
-        title="Get Involved"
+        title="Lets Do It Together"
         subtitle="There are many ways to be part of the change. Choose how you'd like to contribute."
-        breadcrumbs={[{ label: 'Get Involved' }]}
+        breadcrumbs={[{ label: 'Lets Do It Together' }]}
       />
 
       {/* Involvement Options */}
@@ -149,7 +149,7 @@ export default function GetInvolved() {
         </div>
       </section>
 
-      {/* Donate Section */}
+      {/* Contribute Section */}
       <section className="bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
           <div className="max-w-3xl mx-auto">
@@ -235,7 +235,7 @@ export default function GetInvolved() {
   {/* Razorpay */}
   <div className="border border-gray-200 rounded-xl p-6 text-center">
     <h3 className="text-xl font-semibold text-gray-900 mb-3">
-      Donate Online
+      Contribute Online
     </h3>
 
     <p className="text-gray-600 mb-6">
@@ -247,7 +247,7 @@ export default function GetInvolved() {
       className="inline-flex items-center gap-2 bg-gray-900 text-white px-8 py-3 rounded-full hover:bg-gray-800 transition"
     >
       <Heart className="w-5 h-5" />
-      Donate with Razorpay
+      Contribute with Razorpay
     </button>
   </div>
 

@@ -1,6 +1,12 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight, Users, MapPin, CheckCircle, GraduationCap, Heart, ChevronLeft, ChevronRight } from 'lucide-react';
+import { ArrowRight, Users, Heart, ChevronLeft, ChevronRight } from 'lucide-react';
+import {
+  Briefcase,
+  HeartHandshake,
+  Landmark,
+  Eye,
+} from "lucide-react";
 import { IMAGES, impactStats, programCategories, successStories } from '../data/siteData';
 
 const heroSlides = [
@@ -27,13 +33,12 @@ const heroSlides = [
   },
 ];
 
-const iconMap= {
+const iconMap = {
+  Briefcase: <Briefcase className="w-6 h-6" />,
+  HeartHandshake: <HeartHandshake className="w-6 h-6" />,
+  Landmark: <Landmark className="w-6 h-6" />,
   Users: <Users className="w-6 h-6" />,
-  MapPin: <MapPin className="w-6 h-6" />,
-  CheckCircle: <CheckCircle className="w-6 h-6" />,
-  GraduationCap: <GraduationCap className="w-6 h-6" />,
-  IndianRupee: <span className="text-xl font-bold">₹</span>,
-  Heart: <Heart className="w-6 h-6" />,
+  Eye: <Eye className="w-6 h-6" />,
 };
 
 export default function Home() {
@@ -57,7 +62,7 @@ export default function Home() {
   return (
     <div>
       {/* Hero Slider */}
-      <section className="relative h-[85vh] min-h-[600px] bg-gray-900 overflow-hidden">
+      <section className="relative h-[65vh] min-h-[600px] bg-gray-900 overflow-hidden">
         {heroSlides.map((slide, idx) => (
           <div
             key={idx}
@@ -94,7 +99,7 @@ export default function Home() {
                   to="/get-involved"
                   className="inline-flex items-center gap-2 px-7 py-3.5 border-2 border-white text-white font-medium rounded-full hover:bg-white/10 transition-colors"
                 >
-                  Donate Now
+                  Contribute Now
                 </Link>
               </div>
             </div>
@@ -118,7 +123,7 @@ export default function Home() {
       {/* Impact Stats */}
       <section className="bg-white border-b border-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
             {impactStats.map((stat, idx) => (
               <div key={idx} className="text-center">
                 <div className="w-12 h-12 bg-gray-50 rounded-full flex items-center justify-center mx-auto mb-3 text-gray-700">
@@ -137,7 +142,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
-              { icon: <Heart className="w-6 h-6" />, title: 'Donate', desc: 'Support tribal communities through your generous contribution.', link: '/get-involved', color: 'bg-gray-900' },
+              { icon: <Heart className="w-6 h-6" />, title: 'Contribute', desc: 'Support tribal communities through your generous contribution.', link: '/get-involved', color: 'bg-gray-900' },
               { icon: <Users className="w-6 h-6" />, title: 'Volunteer', desc: 'Join our team and make a direct impact in tribal areas.', link: '/get-involved', color: 'bg-gray-700' },
               { icon: <ArrowRight className="w-6 h-6" />, title: 'Join Us', desc: 'Become a member and be part of the change movement.', link: '/get-involved', color: 'bg-gray-800' },
             ].map((item, idx) => (
@@ -286,15 +291,15 @@ export default function Home() {
 
       {/* CTA Section */}
       <section className="bg-gray-900 text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-8">
           <div className="text-center max-w-2xl mx-auto">
             <h2 className="text-3xl lg:text-4xl font-bold font-serif">Be Part of the Change</h2>
             <p className="mt-4 text-gray-300 text-lg">
-              Your support can transform the lives of tribal communities. Donate, volunteer, or partner with us to make a lasting impact.
+              Your support can transform the lives of tribal communities. Contribute, volunteer, or partner with us to make a lasting impact.
             </p>
             <div className="mt-8 flex flex-wrap justify-center gap-4">
               <Link to="/get-involved" className="inline-flex items-center gap-2 px-7 py-3.5 bg-white text-gray-900 font-medium rounded-full hover:bg-gray-100 transition-colors">
-                Donate Now <Heart className="w-4 h-4" />
+                Contribute Now <Heart className="w-4 h-4" />
               </Link>
               <Link to="/get-involved" className="inline-flex items-center gap-2 px-7 py-3.5 border-2 border-white text-white font-medium rounded-full hover:bg-white/10 transition-colors">
                 Volunteer <ArrowRight className="w-4 h-4" />
