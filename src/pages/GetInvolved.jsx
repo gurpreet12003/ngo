@@ -4,72 +4,121 @@ import PageHeader from '../components/PageHeader';
 const involvementOptions = [
   {
     icon: <Users className="w-6 h-6" />,
-    title: 'Volunteer',
-    description: 'Contribute your time and skills to our programs in education, health, environment, and community development.',
-    scope: 'Field work, training, documentation, communications',
-    tasks: 'Teaching, mentoring, organizing events, data collection',
-    impact: '500+ volunteers have contributed 20,000+ hours',
-    link: 'https://forms.google.com',
-    linkLabel: 'Register as Volunteer',
+    title: "Volunteer",
+    description:
+      "Lend your time, skills, and energy to support awareness campaigns, education, mentoring, and community development activities across tribal regions.",
+    scope: "Community outreach, education, awareness drives, mentoring",
+    tasks:
+      "Teaching, conducting workshops, mentoring students, organizing campaigns and field activities.",
+    impact:
+      "Become part of a volunteer network creating lasting change in tribal communities.",
+    link: "https://forms.google.com",
+    linkLabel: "Join as a Volunteer",
   },
   {
     icon: <Briefcase className="w-6 h-6" />,
-    title: 'Intern',
-    description: 'Gain hands-on experience in rural development while making a real difference in tribal communities.',
-    scope: 'Research, program management, social media, field immersion',
-    tasks: 'Project documentation, impact assessment, content creation',
-    impact: '100+ interns from 30+ colleges/universities',
-    link: 'https://forms.google.com',
-    linkLabel: 'Apply for Internship',
+    title: "Internship",
+    description:
+      "Gain hands-on experience in grassroots tribal development while working on rural projects, research, and community initiatives.",
+    scope: "Field research, project management, documentation, social initiatives",
+    tasks:
+      "Research, surveys, impact assessment, community engagement and reporting.",
+    impact:
+      "Develop practical experience while contributing to meaningful social change.",
+    link: "https://forms.google.com",
+    linkLabel: "Apply for Internship",
+  },
+  {
+    icon: <Briefcase className="w-6 h-6" />,
+    title: "Careers",
+    description:
+      "Join AYUSH as a full-time or part-time team member and build a career dedicated to tribal development and social impact.",
+    scope: "Program management, field operations, administration, communications",
+    tasks:
+      "Coordinate projects, manage programs and strengthen long-term community initiatives.",
+    impact:
+      "Work with purpose while improving the lives of indigenous communities.",
+    link: "https://forms.google.com",
+    linkLabel: "View Job Openings",
+  },
+  {
+    icon: <Heart className="w-6 h-6" />,
+    title: "Sponsors",
+    description:
+      "Support our education, health, leadership, and livelihood initiatives through financial sponsorship.",
+    scope: "Educational kits, workshops, health camps, community projects",
+    tasks:
+      "Sponsor specific programs and receive regular impact updates.",
+    impact:
+      "Your support directly empowers tribal families and youth.",
+    link: "#",
+    linkLabel: "Sponsor a Program",
   },
   {
     icon: <UserPlus className="w-6 h-6" />,
-    title: 'Become a Member',
-    description: 'Join our growing network of change-makers committed to tribal empowerment.',
-    scope: 'Annual/lifetime membership with governance participation',
-    tasks: 'Attend meetings, vote on decisions, contribute expertise',
-    impact: 'Active membership community driving organizational decisions',
-    link: 'https://forms.google.com',
-    linkLabel: 'Join as Member',
+    title: "Members",
+    description:
+      "Become an active member of AYUSH and participate in governance, events, and long-term organizational planning.",
+    scope: "Membership and organizational participation",
+    tasks:
+      "Attend meetings, support events, contribute ideas, and participate in decision making.",
+    impact:
+      "Help shape the future direction of AYUSH.",
+    link: "https://forms.google.com",
+    linkLabel: "Become a Member",
   },
   {
     icon: <FolderOpen className="w-6 h-6" />,
-    title: 'Sponsor a Project',
-    description: 'Fund specific projects that align with your interests and see the direct impact of your support.',
-    scope: '5 projects available for sponsorship',
-    tasks: 'Receive regular updates, impact reports, and field visit opportunities',
-    impact: 'Direct, measurable outcomes in tribal communities',
-    link: '#',
-    linkLabel: 'View Projects',
-  },
-  {
-    icon: <Briefcase className="w-6 h-6" />,
-    title: 'Careers',
-    description: 'Join our team and build a meaningful career in social development.',
-    scope: 'Program management, field coordination, communications, finance',
-    tasks: 'Full-time positions at headquarters and field offices',
-    impact: 'Competitive compensation with purpose-driven work',
-    link: 'https://forms.google.com',
-    linkLabel: 'View Openings',
+    title: "Contributors",
+    description:
+      "Contribute your professional skills or resources. Designers, developers, photographers, writers, translators, and donors are all welcome.",
+    scope: "Skill-based volunteering and resource contribution",
+    tasks:
+      "Content creation, technology support, design, photography, translation, equipment donation.",
+    impact:
+      "Every contribution strengthens our reach and community impact.",
+    link: "#",
+    linkLabel: "Contribute Today",
   },
   {
     icon: <Building className="w-6 h-6" />,
-    title: 'Corporate Partnerships',
-    description: 'Partner with us for CSR initiatives, employee engagement, and shared value creation.',
-    scope: 'CSR projects, employee volunteering, skill-based support',
-    tasks: 'Customized partnership models aligned with your CSR goals',
-    impact: 'Multiple corporate partners across sectors',
-    link: 'mailto:ayush@adiyuva.in',
-    linkLabel: 'Write to Us',
+    title: "CSR Partners",
+    description:
+      "Partner with AYUSH to implement sustainable Corporate Social Responsibility initiatives that create measurable social impact.",
+    scope: "CSR implementation, employee engagement, development projects",
+    tasks:
+      "Co-design and support community development initiatives aligned with CSR objectives.",
+    impact:
+      "Build long-term, sustainable impact together.",
+    link: "mailto:ayush@adiyuva.in",
+    linkLabel: "Explore CSR Partnerships",
   },
-];
-
-const sponsorableProjects = [
-  { name: 'Digital Literacy Center', budget: '₹5 Lakhs', duration: '1 Year', beneficiaries: '200 youth', summary: 'Setup and run a computer training center in a tribal village.' },
-  { name: 'Scholarship Fund', budget: '₹3 Lakhs', duration: 'Annual', beneficiaries: '50 students', summary: 'Sponsor higher education for meritorious tribal students.' },
-  { name: 'Organic Farm Setup', budget: '₹8 Lakhs', duration: '2 Years', beneficiaries: '100 farmers', summary: 'Help farmers transition to organic farming with certification support.' },
-  { name: 'Youth Leadership Camp', budget: '₹2 Lakhs', duration: 'Per Camp', beneficiaries: '100 youth', summary: 'Sponsor a 5-day residential leadership training program.' },
-  { name: 'Water Harvesting', budget: '₹10 Lakhs', duration: '1 Year', beneficiaries: '500 families', summary: 'Build water harvesting structures in water-scarce tribal villages.' },
+  {
+    icon: <Building className="w-6 h-6" />,
+    title: "Collaborators",
+    description:
+      "We welcome healthcare professionals, educators, trainers, researchers, and NGOs to jointly implement impactful community initiatives.",
+    scope: "Technical expertise and collaborative projects",
+    tasks:
+      "Conduct workshops, provide expert guidance and co-create community programs.",
+    impact:
+      "Expand the reach and quality of grassroots development initiatives.",
+    link: "mailto:ayush@adiyuva.in",
+    linkLabel: "Collaborate with Us",
+  },
+  {
+    icon: <Building className="w-6 h-6" />,
+    title: "Institutional Partnerships",
+    description:
+      "Partner with AYUSH to advance research, capacity building, innovation, and sustainable tribal development.",
+    scope: "Universities, NGOs, Government, CSR, Social Enterprises",
+    tasks:
+      "Research collaboration, field projects, training, innovation and knowledge sharing.",
+    impact:
+      "Create scalable and sustainable development models together.",
+    link: "mailto:ayush@adiyuva.in",
+    linkLabel: "Partner with Us",
+  },
 ];
 
 export default function GetInvolved() {
@@ -111,43 +160,19 @@ export default function GetInvolved() {
         </div>
       </section>
 
-      {/* Sponsor Projects */}
       <section className="bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-          <div className="text-center mb-10">
-            <h2 className="text-2xl font-bold text-gray-900 font-serif">Sponsor a Project</h2>
-            <p className="text-gray-500 mt-2">Choose a project that aligns with your passion and see the direct impact.</p>
-          </div>
-          <div className="border border-gray-200 rounded-xl overflow-hidden bg-white">
-            <table className="w-full">
-              <thead>
-                <tr className="bg-gray-900 text-white">
-                  <th className="px-6 py-3 text-left text-xs font-medium uppercase tracking-wider">Project</th>
-                  <th className="px-6 py-3 text-left text-xs font-medium uppercase tracking-wider hidden sm:table-cell">Summary</th>
-                  <th className="px-6 py-3 text-center text-xs font-medium uppercase tracking-wider">Budget</th>
-                  <th className="px-6 py-3 text-center text-xs font-medium uppercase tracking-wider hidden md:table-cell">Beneficiaries</th>
-                  <th className="px-6 py-3 text-center text-xs font-medium uppercase tracking-wider">Action</th>
-                </tr>
-              </thead>
-              <tbody className="divide-y divide-gray-100">
-                {sponsorableProjects.map((p, idx) => (
-                  <tr key={idx} className={idx % 2 === 0 ? 'bg-white' : 'bg-gray-50'}>
-                    <td className="px-6 py-3.5 text-sm font-medium text-gray-700">{p.name}</td>
-                    <td className="px-6 py-3.5 text-sm text-gray-500 hidden sm:table-cell">{p.summary}</td>
-                    <td className="px-6 py-3.5 text-sm text-gray-600 text-center font-medium">{p.budget}</td>
-                    <td className="px-6 py-3.5 text-sm text-gray-500 text-center hidden md:table-cell">{p.beneficiaries}</td>
-                    <td className="px-6 py-3.5 text-center">
-                      <a href="#" className="text-xs font-medium text-gray-700 hover:text-gray-900 bg-gray-100 hover:bg-gray-200 px-3 py-1.5 rounded-full inline-flex items-center gap-1 transition-colors">
-                        Details <ExternalLink className="w-3 h-3" />
-                      </a>
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </section>
+  <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16 text-center">
+    <h2 className="text-3xl font-bold font-serif text-gray-900">
+      Support Our Mission
+    </h2>
+
+    <p className="mt-4 text-gray-600 max-w-3xl mx-auto">
+      Your support enables AYUSH to continue empowering tribal communities
+      through education, youth leadership, social entrepreneurship, traditional
+      knowledge preservation, awareness campaigns, and sustainable livelihoods.
+    </p>
+  </div>
+</section>
 
       {/* Contribute Section */}
       <section className="bg-white">

@@ -2,20 +2,24 @@ import PageHeader from '../../components/PageHeader';
 import { milestones, IMAGES } from '../../data/siteData';
 
 const plans = [
-  { period: 'Mid-Term (2024-2026)', goals: [
-    { goal: 'Expand to 10 districts in Maharashtra', status: 'In Progress' },
-    { goal: 'Launch AYUSH Fellowship 2.0 with 50 fellows/year', status: 'Planned' },
-    { goal: 'Establish 5 new digital literacy centers', status: 'In Progress' },
-    { goal: 'Create 100 sustainable livelihood enterprises', status: 'Planned' },
-    { goal: 'Document 10 tribal languages and art forms', status: 'Planned' },
-  ]},
-  { period: 'Long-Term (2026-2030)', goals: [
-    { goal: 'Reach 200,000 beneficiaries across Western India', status: 'Vision' },
-    { goal: 'Establish AYUSH as a national-level tribal development resource center', status: 'Vision' },
-    { goal: 'Launch tribal products brand with pan-India presence', status: 'Vision' },
-    { goal: 'Create a tribal youth leadership network of 5,000 members', status: 'Vision' },
-    { goal: 'Influence tribal development policy at state and national levels', status: 'Vision' },
-  ]},
+  {
+    period: 'Mid-Term (2024-2026)', goals: [
+      { goal: 'Expand to 10 districts in Maharashtra', status: 'In Progress' },
+      { goal: 'Launch AYUSH Fellowship 2.0 with 50 fellows/year', status: 'Planned' },
+      { goal: 'Establish 5 new digital literacy centers', status: 'In Progress' },
+      { goal: 'Create 100 sustainable livelihood enterprises', status: 'Planned' },
+      { goal: 'Document 10 tribal languages and art forms', status: 'Planned' },
+    ]
+  },
+  {
+    period: 'Long-Term (2026-2030)', goals: [
+      { goal: 'Reach 200,000 beneficiaries across Western India', status: 'Vision' },
+      { goal: 'Establish AYUSH as a national-level tribal development resource center', status: 'Vision' },
+      { goal: 'Launch tribal products brand with pan-India presence', status: 'Vision' },
+      { goal: 'Create a tribal youth leadership network of 5,000 members', status: 'Vision' },
+      { goal: 'Influence tribal development policy at state and national levels', status: 'Vision' },
+    ]
+  },
 ];
 
 export default function HistoryMilestones() {
@@ -35,24 +39,63 @@ export default function HistoryMilestones() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-20">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <p className="text-sm font-medium text-gray-500 uppercase tracking-wider mb-3">Our Story</p>
-              <h2 className="text-3xl font-bold text-gray-900 font-serif">How It All Began</h2>
+              <p className="text-sm font-medium text-gray-500 uppercase tracking-wider mb-3">
+                Our Story
+              </p>
+
+              <h2 className="text-3xl font-bold text-gray-900 font-serif">
+                The Journey of AYUSH
+              </h2>
+
               <div className="mt-6 space-y-4 text-gray-600 leading-relaxed">
                 <p>
-                  In 2005, a group of young tribal students in Kasa, Dahanu, came together with a shared dream — to change the narrative of their communities. They had witnessed firsthand the challenges of accessing quality education, the erosion of cultural traditions, and the lack of economic opportunities.
+                  AYUSH began in <strong>1999</strong> as an informal initiative by a
+                  group of tribal students who wanted to support and guide fellow tribal
+                  youth pursuing higher education in Mumbai, Thane, and Palghar districts.
+                  Having personally experienced the challenges of education, migration, and
+                  limited opportunities, they started helping students through mentoring
+                  and guidance.
                 </p>
+
                 <p>
-                  What began as informal study groups and cultural events gradually evolved into a structured organization. The founders, all first-generation learners from Adivasi families, believed that tribal youth themselves held the key to their communities' transformation.
+                  Over the next several years, the group observed different development
+                  models and gradually built a vision centered on tribal youth leadership,
+                  education, traditional knowledge, and community empowerment. From
+                  <strong> 2007</strong>, AYUSH expanded its activities through career
+                  guidance, educational support, social networking, and community
+                  engagement programs, bringing together students, volunteers, and tribal
+                  artisans.
                 </p>
+
                 <p>
-                  They named the organization AYUSH — Adivasi Yuva Shakti (Tribal Youth Power) — a name that embodied their belief in the collective strength of indigenous youth. By 2010, AYUSH was officially registered as a Trust and Society, marking the beginning of a new chapter.
+                  To work in a more organized and sustainable manner, AYUSH was officially
+                  registered as a non-governmental organization in
+                  <strong> 2011</strong>. Since then, it has been working for tribal
+                  empowerment through education, cultural preservation, sustainable
+                  livelihoods, social entrepreneurship, and collaborative partnerships with
+                  communities, government departments, CSR initiatives, volunteers, and
+                  supporters.
+                </p>
+
+                <p>
+                  AYUSH successfully secured the
+                  <strong> Geographical Indication (GI)</strong> registration for
+                  <strong> Warli Painting</strong> under the Intellectual Property Rights
+                  Act and continues to strengthen post-GI activities. The organization has
+                  also been recognized among the
+                  <strong> National Best Practices</strong> by
+                  <strong> ISRN</strong> and the
+                  <strong> Ministry of Culture</strong>, and was granted
+                  <strong> UN ECOSOC Special Consultative Status</strong>, reflecting its
+                  growing contribution to tribal development at national and international
+                  levels.
                 </p>
               </div>
             </div>
             <div className="grid grid-cols-2 gap-4">
-              <img src={IMAGES.tribal2} alt="AYUSH early days" className="rounded-lg grayscale w-full aspect-square object-cover" />
+              <img src={IMAGES.socialAwareness} alt="AYUSH early days" className="rounded-lg grayscale w-full aspect-square object-cover" />
               <img src={IMAGES.education1} alt="Education program" className="rounded-lg grayscale w-full aspect-square object-cover mt-8" />
-              <img src={IMAGES.volunteer2} alt="Community work" className="rounded-lg grayscale w-full aspect-square object-cover -mt-4" />
+              <img src={IMAGES.YouthLeadership} alt="Community work" className="rounded-lg grayscale w-full aspect-square object-cover -mt-4" />
               <img src={IMAGES.tribal3} alt="Tribal community" className="rounded-lg grayscale w-full aspect-square object-cover mt-4" />
             </div>
           </div>
@@ -104,11 +147,10 @@ export default function HistoryMilestones() {
                   {plan.goals.map((g, gIdx) => (
                     <div key={gIdx} className="px-6 py-4 flex items-center justify-between gap-4">
                       <span className="text-sm text-gray-700">{g.goal}</span>
-                      <span className={`text-xs font-medium px-2.5 py-1 rounded-full whitespace-nowrap ${
-                        g.status === 'In Progress' ? 'bg-gray-100 text-gray-700' :
-                        g.status === 'Planned' ? 'bg-gray-50 text-gray-500' :
-                        'bg-gray-50 text-gray-400'
-                      }`}>
+                      <span className={`text-xs font-medium px-2.5 py-1 rounded-full whitespace-nowrap ${g.status === 'In Progress' ? 'bg-gray-100 text-gray-700' :
+                          g.status === 'Planned' ? 'bg-gray-50 text-gray-500' :
+                            'bg-gray-50 text-gray-400'
+                        }`}>
                         {g.status}
                       </span>
                     </div>

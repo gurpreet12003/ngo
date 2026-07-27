@@ -6,8 +6,8 @@ export default function LeadershipTeam() {
   return (
     <div>
       <PageHeader
-        title="Leadership Team"
-        subtitle="Meet the dedicated individuals driving AYUSH's mission of tribal empowerment."
+       title="Leadership Team"
+  subtitle="Meet the founders and governing team leading AYUSH's mission of tribal empowerment."
         breadcrumbs={[
           { label: 'About Us', path: '/about' },
           { label: 'Leadership Team' },
@@ -20,7 +20,7 @@ export default function LeadershipTeam() {
           <div className="text-center mb-12">
             <p className="text-sm font-medium text-gray-500 uppercase tracking-wider mb-2">Founders</p>
             <h2 className="text-3xl font-bold text-gray-900 font-serif">Founding Team</h2>
-            <p className="text-gray-600 mt-2">The visionaries who started the AYUSH movement.</p>
+            <p className="text-gray-600 mt-2"> The founding members who established AYUSH and laid the foundation for tribal empowerment since 1999.</p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-4xl mx-auto">
             {leadershipTeam.founding.map((member, idx) => (
@@ -43,7 +43,7 @@ export default function LeadershipTeam() {
           <div className="text-center mb-12">
             <p className="text-sm font-medium text-gray-500 uppercase tracking-wider mb-2">Current Year</p>
             <h2 className="text-3xl font-bold text-gray-900 font-serif">Current Team</h2>
-            <p className="text-gray-600 mt-2">The team leading our programs and operations today.</p>
+            <p className="text-gray-600 mt-2">  The present Governing Board responsible for guiding AYUSH's programs, partnerships, and community initiatives.</p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {leadershipTeam.current.map((member, idx) => (

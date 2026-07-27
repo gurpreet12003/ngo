@@ -10,7 +10,7 @@ export default function PageHeader({ title, subtitle, breadcrumbs, bgImage }) {
           <img src={bgImage} alt="" className="w-full h-full object-cover opacity-10" />
         </div>
       )}
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-8">
         {breadcrumbs && (
           <nav className="flex items-center gap-1.5 text-sm text-gray-500 mb-4">
             <Link to="/" className="hover:text-gray-900 transition-colors">Home</Link>
@@ -27,7 +27,7 @@ export default function PageHeader({ title, subtitle, breadcrumbs, bgImage }) {
           </nav>
         )}
         <h1 className="text-3xl lg:text-4xl font-bold text-gray-900 font-serif">{title}</h1>
-        {subtitle && <p className="mt-3 text-gray-600 max-w-2xl text-lg">{subtitle}</p>}
+        {subtitle && <p className="mt-3 text-gray-600 max-w-2xl text-sm">{subtitle}</p>}
       </div>
     </div>
   );

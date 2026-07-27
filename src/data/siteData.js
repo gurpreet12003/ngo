@@ -1,3 +1,5 @@
+
+
 export const IMAGES = {
   hero1: 'https://images.pexels.com/photos/9144156/pexels-photo-9144156.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200',
   hero2: 'https://images.pexels.com/photos/11276073/pexels-photo-11276073.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200',
@@ -17,220 +19,182 @@ export const IMAGES = {
   nature: 'https://images.pexels.com/photos/5264383/pexels-photo-5264383.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200',
   art: 'https://images.pexels.com/photos/22820076/pexels-photo-22820076.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200',
   farmers: 'https://images.pexels.com/photos/20356777/pexels-photo-20356777.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200',
+  YouthLeadership:"Youth_Leadership.jpg",
+  career_guid:"/public/Career_Guidance.jpg",
+  socialAwareness:"/Social_Awareness.jpg",
+  socialEntrepren:"/Social_Entrepreneruship.jpg",
+  tribal_empowerment:"/Tribal_Empowerment.jpg"
 
 };
 
 export const programCategories = [
+{
+  slug: "education",
+  title: "Educational & Career Guidance",
+  description:
+    "Connecting tribal students with educational opportunities, career guidance, mentorship, scholarships, and digital learning to build confident future leaders.",
+  image: IMAGES.career_guid,
+
+  activities: [
+    {
+      id: "career-guidance",
+      title: "Career Guidance & Mentorship",
+      aim: "Guide tribal students towards higher education and meaningful careers.",
+      purpose:
+        "Bridge the information gap regarding education, competitive exams, scholarships, and career opportunities.",
+      method:
+        "Career counselling camps, mentorship by tribal professionals, group discussions, educational seminars, and one-to-one guidance.",
+      impact:
+        "Since 2007, thousands of tribal students have received career guidance, scholarship support, and mentorship, helping many pursue higher education and professional careers.",
+      cta: "Become a Mentor",
+      image: IMAGES.education1,
+    },
+    {
+      id: "scholarship-support",
+      title: "Scholarship & Admission Support",
+      aim: "Help deserving students continue higher education.",
+      purpose:
+        "Ensure talented tribal youth do not miss educational opportunities due to lack of awareness or financial guidance.",
+      method:
+        "Scholarship awareness, admission counselling, application support, and document assistance.",
+      impact:
+        "Improved scholarship awareness and increased admissions into colleges, universities, and vocational institutes.",
+      cta: "Sponsor a Student's Future",
+      image: IMAGES.education2,
+    },
+    {
+      id: "digital-literacy",
+      title: "Digital Literacy",
+      aim: "Improve digital skills among tribal youth.",
+      purpose:
+        "Prepare students for today's technology-driven educational and professional environment.",
+      method:
+        "Basic computer training, internet awareness, digital tools, and online learning sessions.",
+      impact:
+        "Hundreds of rural students became digitally empowered for education and employment.",
+      cta: "Support Digital Education",
+      image: IMAGES.education3,
+    },
+  ],
+},
+ {
+  slug: "youth-leadership",
+  title: "Youth Leadership",
+  description:
+    "Developing confident tribal youth leaders capable of creating positive change within their own communities.",
+  image: IMAGES.YouthLeadership,
+
+  activities: [
+    {
+      id: "leadership-development",
+      title: "Youth Leadership Development",
+      aim: "Build future tribal leaders.",
+      purpose:
+        "Encourage tribal youth to actively participate in community development and decision making.",
+      method:
+        "Leadership workshops, personality development, volunteering opportunities, exposure visits, and mentoring.",
+      impact:
+        "A strong network of youth leaders now conducts awareness campaigns, social initiatives, and village development activities.",
+      cta: "Register Your Interest",
+      image: IMAGES.workshop2,
+    },
+  ],
+},
+ {
+  slug: "tribal-empowerment",
+  title: "Tribal Empowerment",
+  description:
+    "Empowering indigenous communities through rights awareness, community organization, traditional knowledge preservation, and self-reliance.",
+  image: IMAGES.tribal_empowerment,
+
+  activities: [
+    {
+      id: "community-empowerment",
+      title: "Rights & Community Empowerment",
+      aim: "Strengthen tribal communities.",
+      purpose:
+        "Increase awareness about constitutional rights, welfare schemes, and community participation.",
+      method:
+        "Village meetings, awareness camps, legal guidance, and community mobilization.",
+      impact:
+        "Thousands of tribal families have become more aware of their rights, government schemes, and community leadership.",
+      cta: "Join as a Community Volunteer",
+      image: IMAGES.tribal2,
+    },
+    {
+      id: "traditional-knowledge",
+      title: "Traditional Knowledge Preservation",
+      aim: "Protect indigenous knowledge systems.",
+      purpose:
+        "Preserve tribal culture while promoting sustainable livelihoods.",
+      method:
+        "Documentation, community workshops, artisan support, and cultural promotion.",
+      impact:
+        "Warli Painting GI activities and traditional knowledge initiatives continue to strengthen tribal identity.",
+      cta: "Support Cultural Preservation",
+      image: IMAGES.art,
+    },
+  ],
+},
   {
-    slug: 'education',
-    title: 'Educational & Career Guidance',
-    description: 'Empowering tribal youth through education, mentorship, and career counseling to build a brighter future.',
-    image: IMAGES.education1,
-    activities: [
-      {
-        id: 'career-counseling',
-        title: 'Career Counseling Workshops',
-        aim: 'Guide tribal students in making informed career decisions',
-        purpose: 'Bridge the information gap about career opportunities for rural and tribal youth',
-        method: 'Monthly workshops in schools and community centers with professionals from diverse fields',
-        impact: '2,500+ students counseled, 85% reported clearer career vision',
-        cta: 'Join as a career mentor',
-        image: IMAGES.education1,
-      },
-      {
-        id: 'scholarship-assistance',
-        title: 'Scholarship Assistance Program',
-        aim: 'Help deserving students access financial aid for higher education',
-        purpose: 'Remove financial barriers to education for tribal youth',
-        method: 'Identification of eligible students, application support, and scholarship database management',
-        impact: '500+ students received scholarship assistance worth ₹1.2 Crore',
-        cta: 'Sponsor a student',
-        image: IMAGES.education2,
-      },
-      {
-        id: 'digital-literacy',
-        title: 'Digital Literacy Campaign',
-        aim: 'Equip rural youth with essential digital skills',
-        purpose: 'Bridge the digital divide in tribal communities',
-        method: 'Computer training centers in villages with certified trainers and Contributed equipment',
-        impact: '1,800+ youth trained in basic to intermediate computer skills',
-        cta: 'Contribute a computer',
-        image: IMAGES.education3,
-      },
-      {
-        id: 'study-circles',
-        title: 'Community Study Circles',
-        aim: 'Create peer-learning environments for competitive exam preparation',
-        purpose: 'Provide structured study support to aspiring students',
-        method: 'Weekly study groups led by trained facilitators with curated study materials',
-        impact: '300+ students cleared competitive exams through study circles',
-        cta: 'Become a study circle facilitator',
-        image: IMAGES.workshop1,
-      },
-    ],
-  },
-  {
-    slug: 'youth-leadership',
-    title: 'Youth Leadership',
-    description: 'Nurturing the next generation of tribal leaders through training, exposure, and hands-on community engagement.',
-    image: IMAGES.workshop2,
-    activities: [
-      {
-        id: 'leadership-camps',
-        title: 'Youth Leadership Camps',
-        aim: 'Develop leadership skills among tribal youth',
-        purpose: 'Create a pipeline of community leaders who can drive positive change',
-        method: '5-day residential camps with interactive sessions, team-building activities, and mentorship',
-        impact: '800+ young leaders trained across 15 districts',
-        cta: 'Register for next camp',
-        image: IMAGES.workshop2,
-      },
-      {
-        id: 'youth-parliament',
-        title: 'Youth Parliament Sessions',
-        aim: 'Foster democratic values and civic awareness',
-        purpose: 'Enable youth to understand governance and participate in civic life',
-        method: 'Mock parliament sessions debating real community issues with expert moderators',
-        impact: '12 annual sessions, 500+ participants, 20+ community resolutions passed',
-        cta: 'Participate in Youth Parliament',
-        image: IMAGES.workshop1,
-      },
-      {
-        id: 'fellowship-program',
-        title: 'AYUSH Fellowship Program',
-        aim: 'Create a cadre of dedicated social change agents',
-        purpose: 'Provide intensive training and field experience to committed youth',
-        method: '6-month fellowship with classroom training, field immersion, and mentorship',
-        impact: '120+ fellows completed, 70% continue working in social sector',
-        cta: 'Apply for fellowship',
-        image: IMAGES.education3,
-      },
-    ],
-  },
-  {
-    slug: 'tribal-empowerment',
-    title: 'Tribal Empowerment',
-    description: 'Strengthening tribal communities through rights awareness, cultural preservation, and sustainable livelihood programs.',
-    image: IMAGES.tribal1,
-    activities: [
-      {
-        id: 'rights-awareness',
-        title: 'Tribal Rights Awareness Program',
-        aim: 'Educate tribal communities about their constitutional and legal rights',
-        purpose: 'Empower communities to claim their rightful entitlements',
-        method: 'Village-level awareness camps, legal aid clinics, and rights documentation',
-        impact: '5,000+ families aware of Forest Rights Act, 1,200+ claims filed',
-        cta: 'Support rights awareness',
-        image: IMAGES.tribal2,
-      },
-      {
-        id: 'cultural-preservation',
-        title: 'Cultural Heritage Preservation',
-        aim: 'Document and preserve tribal arts, language, and traditions',
-        purpose: 'Prevent loss of rich tribal cultural heritage',
-        method: 'Documentation projects, cultural festivals, art workshops, and language preservation',
-        impact: '50+ Warli art workshops, 3 tribal language documentation projects',
-        cta: 'Join cultural program',
-        image: IMAGES.art,
-      },
-      {
-        id: 'sustainable-livelihoods',
-        title: 'Sustainable Livelihood Programs',
-        aim: 'Create income-generating opportunities for tribal families',
-        purpose: 'Reduce economic vulnerability and migration',
-        method: 'Skill training, SHG formation, market linkage, and microfinance support',
-        impact: '800+ families with improved livelihoods, 50+ SHGs formed',
-        cta: 'Sponsor a livelihood project',
-        image: IMAGES.tribal3,
-      },
-      {
-        id: 'health-nutrition',
-        title: 'Health & Nutrition Awareness',
-        aim: 'Improve health outcomes in tribal communities',
-        purpose: 'Address malnutrition and lack of healthcare access',
-        method: 'Health camps, nutrition gardens, ASHA training, and referral services',
-        impact: '3,000+ beneficiaries, 40% reduction in malnutrition in target areas',
-        cta: 'Support health camps',
-        image: IMAGES.tribal4,
-      },
-    ],
-  },
-  {
-    slug: 'social-entrepreneurship',
-    title: 'Social Entrepreneurship Model',
-    description: 'Building sustainable social enterprises that create economic value while addressing community challenges.',
-    image: IMAGES.workshop1,
-    activities: [
-      {
-        id: 'incubation-center',
-        title: 'Social Enterprise Incubation',
-        aim: 'Incubate social enterprises led by tribal entrepreneurs',
-        purpose: 'Create sustainable business models addressing community needs',
-        method: 'Business plan mentoring, seed funding, market access, and technical support',
-        impact: '15+ social enterprises incubated, ₹50 Lakhs in revenue generated',
-        cta: 'Submit your idea',
-        image: IMAGES.workshop1,
-      },
-      {
-        id: 'tribal-products',
-        title: 'Tribal Products Marketplace',
-        aim: 'Create market access for tribal artisans and producers',
-        purpose: 'Ensure fair prices and wider markets for tribal products',
-        method: 'Online marketplace, exhibitions, retail partnerships, and brand development',
-        impact: '200+ artisans connected to markets, 300% increase in average income',
-        cta: 'Browse tribal products',
-        image: IMAGES.tribal1,
-      },
-      {
-        id: 'agri-enterprise',
-        title: 'Agricultural Enterprise Development',
-        aim: 'Transform tribal agriculture into profitable ventures',
-        purpose: 'Move from subsistence to commercial farming through value addition',
-        method: 'Organic certification, processing units, cold chain, and direct marketing',
-        impact: '500+ farmers in organic farming, 5 FPOs established',
-        cta: 'Partner with us',
-        image: IMAGES.farmers,
-      },
-    ],
-  },
-  {
-    slug: 'social-awareness',
-    title: 'Social Awareness',
-    description: 'Driving community awareness on critical social issues including gender equality, environment, and civic participation.',
-    image: IMAGES.volunteer2,
-    activities: [
-      {
-        id: 'gender-equality',
-        title: 'Gender Equality Campaigns',
-        aim: 'Promote gender equality and women empowerment in tribal communities',
-        purpose: 'Challenge patriarchal norms and support women\'s agency',
-        method: 'Street plays, workshops, women\'s collectives, and advocacy campaigns',
-        impact: '10,000+ people reached, 30+ women leaders emerged',
-        cta: 'Join the campaign',
-        image: IMAGES.tribal3,
-      },
-      {
-        id: 'environmental-conservation',
-        title: 'Environmental Conservation Drives',
-        aim: 'Protect natural resources and promote sustainable practices',
-        purpose: 'Safeguard tribal communities\' relationship with nature',
-        method: 'Tree plantation, water harvesting, waste management, and eco-awareness rallies',
-        impact: '50,000+ trees planted, 20 water harvesting structures built',
-        cta: 'Plant a tree',
-        image: IMAGES.nature,
-      },
-      {
-        id: 'anti-addiction',
-        title: 'Anti-Addiction Awareness Program',
-        aim: 'Combat substance abuse in tribal youth',
-        purpose: 'Create awareness about harmful effects of addiction',
-        method: 'Counseling centers, peer educator training, and community mobilization',
-        impact: '2,000+ youth counseled, 15 de-addiction support groups active',
-        cta: 'Support the cause',
-        image: IMAGES.volunteer1,
-      },
-    ],
-  },
+  slug: "social-entrepreneurship",
+  title: "Social Entrepreneurship Model",
+  description:
+    "Creating sustainable livelihoods by combining traditional tribal knowledge with modern entrepreneurship.",
+  image: IMAGES.socialEntrepren,
+
+  activities: [
+    {
+      id: "tribal-enterprise",
+      title: "Tribal Enterprise Development",
+      aim: "Build community-owned enterprises.",
+      purpose:
+        "Generate sustainable income using tribal art, crafts, forest produce, and agriculture.",
+      method:
+        "Business mentoring, product development, branding, digital marketing, and market linkages.",
+      impact:
+        "Emerging tribal entrepreneurs are creating local employment while preserving traditional skills.",
+      cta: "Become an Enterprise Mentor",
+      image: IMAGES.tribal1,
+    },
+    {
+      id: "market-linkage",
+      title: "Market Linkages",
+      aim: "Connect tribal producers with wider markets.",
+      purpose:
+        "Reduce exploitation by middlemen and improve artisan incomes.",
+      method:
+        "Exhibitions, buyer connections, branding, online promotion, and fair-trade partnerships.",
+      impact:
+        "Improved market access for tribal artisans and producer groups.",
+      cta: "Fund a Micro-Enterprise",
+      image: IMAGES.farmers,
+    },
+  ],
+},
+ {
+  slug: "social-awareness",
+  title: "Social Awareness",
+  description:
+    "Promoting awareness on health, education, constitutional rights, environment, addiction prevention, and social responsibility.",
+  image: IMAGES.socialAwareness,
+
+  activities: [
+    {
+      id: "awareness-campaigns",
+      title: "Community Awareness Campaigns",
+      aim: "Educate and empower rural tribal communities.",
+      purpose:
+        "Improve awareness regarding health, hygiene, rights, gender equality, and environmental conservation.",
+      method:
+        "Street plays, rallies, workshops, public meetings, creative campaigns, and village outreach.",
+      impact:
+        "Thousands of families have adopted healthier practices, increased civic participation, and become more informed about government welfare programs.",
+      cta: "Join as an Awareness Volunteer",
+      image: IMAGES.volunteer1,
+    },
+  ],
+},
 ];
 
 export const completedProjects = [
@@ -292,30 +256,149 @@ export const impactStats = [
 
 export const leadershipTeam = {
   founding: [
-    { name: 'Team Member 1', role: 'Founder & President', bio: 'Social activist with 15+ years of experience in tribal development. Led multiple grassroots movements for tribal rights and education.', image: '' },
-    { name: 'Team Member 2', role: 'Co-Founder & Secretary', bio: 'Education advocate and community organizer. Pioneered digital literacy programs in remote tribal areas of Palghar.', image: '' },
-    { name: 'Team Member 3', role: 'Co-Founder & Treasurer', bio: 'Finance professional turned social worker. Manages organizational finances and ensures transparent fund utilization.', image: '' },
+    {
+      name: "Sachin Satvi",
+      role: "President",
+      bio: "BE Mechanical. Co-founder of AYUSH and one of the pioneers behind the tribal youth movement. Based in Waghadi, Taluka Dahanu, District Thane, Maharashtra.",
+      social: {
+        linkedin: "https://www.linkedin.com/in/sachin-satvi",
+      },
+    },
+    {
+      name: "Pandurang Bhau Raut",
+      role: "Vice President",
+      bio: "BE Mechanical. Founding member of AYUSH from Wangani, Taluka Jawhar, District Thane, Maharashtra.",
+    },
+    {
+      name: "Dr. Sunil Balkrishan Parhad",
+      role: "Secretary",
+      bio: "BAMS, PGHM. Founding Secretary of AYUSH from Khambale, Taluka Dahanu, District Thane, Maharashtra.",
+    },
+    {
+      name: "Mr. Sandip Ramu Sathe",
+      role: "Joint Secretary",
+      bio: "B.Sc., LL.B. Founding member from Bandhghar, Taluka Dahanu, District Thane, Maharashtra.",
+    },
+    {
+      name: "Mr. Vasant Navashya Bhasara",
+      role: "Treasurer",
+      bio: "MSW. Founding Treasurer from Dhundalwadi, Taluka Dahanu, District Thane, Maharashtra.",
+    },
+    {
+      name: "Dr. Sharad Sakharam Satvi",
+      role: "Member",
+      bio: "MS, MBBS. Founding member from Kasa, Taluka Dahanu, District Thane, Maharashtra.",
+    },
+    {
+      name: "Vipul Madhusudan Bharsat",
+      role: "Member",
+      bio: "B.Com. Founding member from Jawhar, Taluka Jawhar, District Thane, Maharashtra.",
+    },
   ],
+
   current: [
-    { name: 'Team Member 4', role: 'Program Director', bio: 'Leads all programmatic interventions across education, livelihoods, and awareness.', image: '', social: { linkedin: '#', twitter: '#' } },
-    { name: 'Team Member 5', role: 'Operations Manager', bio: 'Manages field operations, volunteer coordination, and community engagement.', image: '', social: { linkedin: '#' } },
-    { name: 'Team Member 6', role: 'Communications Lead', bio: 'Handles media relations, social media, and stakeholder communications.', image: '', social: { linkedin: '#', twitter: '#' } },
-    { name: 'Team Member 7', role: 'Youth Programs Lead', bio: 'Designs and implements youth leadership and fellowship programs.', image: '', social: { linkedin: '#' } },
-    { name: 'Team Member 8', role: 'Livelihood Specialist', bio: 'Expert in tribal livelihoods, FPO management, and market linkage.', image: '', social: { linkedin: '#' } },
+    {
+      name: "Sachin Satvi",
+      role: "President",
+      bio: "BE Mechanical (BAMU), MBA (SMU), PG Tribal Development Management (NIRD), Business Accelerator Program (IIM Nagpur). Leading AYUSH's strategic vision and tribal development initiatives. Waghadi, Taluka Dahanu, District Palghar, Maharashtra.",
+      social: {
+        linkedin: "https://www.linkedin.com/in/sachin-satvi",
+      },
+    },
+    {
+      name: "Sanchita Satvi",
+      role: "Secretary",
+      bio: "B.Sc., M.Sc., PG Tribal Development Management (NIRD). Oversees organizational administration and community programs. Waghadi, Taluka Dahanu, District Palghar, Maharashtra.",
+    },
+    {
+      name: "Bablu Vahut",
+      role: "Member",
+      bio: "BE Mechanical. Member from Jawhar, Taluka Jawhar, District Palghar, Maharashtra.",
+    },
+    {
+      name: "Mr. Sandip Ramu Sathe",
+      role: "Member",
+      bio: "B.Sc., LL.B. Governing Board Member from Bandhghar, Taluka Dahanu, District Palghar, Maharashtra.",
+    },
+    {
+      name: "Dr. Sharad Sakharam Satvi",
+      role: "Member",
+      bio: "MS, MBBS. Governing Board Member from Kasa, Taluka Dahanu, District Palghar, Maharashtra.",
+    },
+    {
+      name: "Vipul Madhusudan Bharsat",
+      role: "Member",
+      bio: "B.Com. Governing Board Member from Jawhar, Taluka Jawhar, District Palghar, Maharashtra.",
+    },
+    {
+      name: "Swapnil Janardan Dive",
+      role: "Treasurer",
+      bio: "AYUSH Warli Painting Cluster Coordinator. Treasurer of the organization from Chikhale, Taluka Dahanu, District Palghar, Maharashtra.",
+    },
   ],
 };
 
 export const milestones = [
-  { year: '2005', title: 'Foundation', description: 'AYUSH was founded by a group of passionate tribal youth in Kasa, Dahanu.' },
-  { year: '2007', title: 'First Education Program', description: 'Launched career counseling workshops reaching 200 students in first year.' },
-  { year: '2010', title: 'Official Registration', description: 'Registered as a Trust and Society. Launched the website adiyuva.in.' },
-  { year: '2012', title: 'Youth Leadership Academy', description: 'Started annual leadership camps training 100+ youth per year.' },
-  { year: '2015', title: 'Forest Rights Campaign', description: 'Major campaign helping 1200 families file forest rights claims.' },
-  { year: '2017', title: 'UNDP Partnership', description: 'Partnered with UNDP India for rights documentation project.' },
-  { year: '2019', title: 'Digital Literacy Mission', description: 'Launched comprehensive digital literacy program in 30 villages.' },
-  { year: '2021', title: 'Social Enterprise Launch', description: 'Established tribal products marketplace and organic FPOs.' },
-  { year: '2023', title: '50,000 Beneficiaries', description: 'Crossed the milestone of reaching 50,000 beneficiaries across programs.' },
-  { year: '2024', title: 'Expansion Phase', description: 'Extended programs to 5 new districts in Maharashtra.' },
+  {
+    year: "1999",
+    title: "Early Roots",
+    description:
+      "AYUSH started as an informal initiative by tribal students to guide and support fellow tribal students pursuing higher education in Mumbai, Thane, and Palghar districts."
+  },
+  {
+    year: "2003",
+    title: "Concept Building",
+    description:
+      "Studied successful community development models, identified tribal youth priorities, and developed the initial vision and activity plans for AYUSH."
+  },
+  {
+    year: "2007",
+    title: "Initiating Activities",
+    description:
+      "Started community meetings, group discussions, career and education guidance programs, social networking initiatives, and Warli Painting study activities with artisans."
+  },
+  {
+    year: "2011",
+    title: "Organization Formation",
+    description:
+      "Officially registered AYUSH as an NGO under the Societies Registration Act, 1860, and began structured voluntary activities across tribal communities."
+  },
+  {
+    year: "2012",
+    title: "Warli Painting GI",
+    description:
+      "Successfully obtained the Geographical Indication (GI) registration for Warli Painting under the Intellectual Property Rights framework and initiated post-GI development activities."
+  },
+  {
+    year: "2017",
+    title: "Organization Strengthening",
+    description:
+      "Expanded collaborations with the Tribal Development Department, Government of Maharashtra, CSR partners, sponsors, and strengthened the AYUSH Warli Painting Cluster."
+  },
+  {
+    year: "2021",
+    title: "Enhancing Effectiveness",
+    description:
+      "Strengthened collaboration with organizations, volunteers, government agencies, CSR partners, and communities while promoting sustainable social entrepreneurship."
+  },
+  {
+    year: "2023",
+    title: "International Recognition",
+    description:
+      "AYUSH was granted Special Consultative Status by the United Nations ECOSOC, recognizing its contribution to tribal development and community empowerment."
+  },
+  {
+    year: "2024",
+    title: "National Recognition",
+    description:
+      "Recognized among the National Best Practices by ISRN and the Ministry of Culture for preserving traditional knowledge and promoting tribal empowerment."
+  },
+  {
+    year: "2025",
+    title: "Building the Future",
+    description:
+      "Continuing to strengthen a sustainable tribal ecosystem through social entrepreneurship based on tribal art, craft, agriculture, forest produce, and collaborative partnerships."
+  }
 ];
 
 export const successStories = [

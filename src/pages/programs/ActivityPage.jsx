@@ -3,11 +3,8 @@ import { ArrowLeft, Target, Lightbulb, Wrench, BarChart3, ArrowRight } from 'luc
 import PageHeader from '../../components/PageHeader';
 import { programCategories } from '../../data/siteData';
 
-interface Props {
-  category: string;
-}
 
-export default function ActivityPage({ category }: Props) {
+export default function ActivityPage({ category }) {
   const { activityId } = useParams();
   const cat = programCategories.find((c) => c.slug === category);
   const activity = cat?.activities.find((a) => a.id === activityId);

@@ -16,34 +16,59 @@ export default function AboutUs() {
     <div>
       <PageHeader
         title="About AYUSH"
-        subtitle="Adivasi Yuva Shakti — empowering tribal communities through education, culture, and sustainable development since 2005."
+        subtitle="Adivasi Yuva Seva Sangh (AYUSH) is a tribal-led organization dedicated to empowering indigenous communities through education, traditional knowledge, social entrepreneurship, and sustainable development since 1999."
         breadcrumbs={[{ label: 'About Us' }]}
       />
-
       {/* Overview */}
       <section className="bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <p className="text-sm font-medium text-gray-500 uppercase tracking-wider mb-3">Who We Are</p>
-              <h2 className="text-3xl font-bold text-gray-900 font-serif">A Youth-Led Movement for Tribal Transformation</h2>
+              <p className="text-sm font-medium text-gray-500 uppercase tracking-wider mb-3">
+                Who We Are
+              </p>
+
+              <h2 className="text-3xl font-bold text-gray-900 font-serif">
+                A Tribal-Led Organization for Community Empowerment
+              </h2>
+
               <div className="mt-6 space-y-4 text-gray-600 leading-relaxed">
                 <p>
-                  AYUSH (Adivasi Yuva Shakti) is a grassroots organization working with Adivasi (indigenous/tribal) communities in Palghar district, Maharashtra, India. Founded in 2005 by a group of passionate tribal youth, AYUSH has grown into a comprehensive development organization impacting over 50,000 beneficiaries.
+                  <strong>Adivasi Yuva Seva Sangh (AYUSH)</strong> is a tribal-led
+                  non-profit organization that began as an informal initiative in
+                  <strong>1999</strong> when a group of tribal students started supporting
+                  fellow students pursuing higher education. What started as voluntary
+                  guidance gradually evolved into a structured movement dedicated to
+                  empowering tribal communities through education, leadership, cultural
+                  preservation, and sustainable livelihoods.
                 </p>
+
                 <p>
-                  Our work spans five key areas — Education & Career Guidance, Youth Leadership, Tribal Empowerment, Social Entrepreneurship, and Social Awareness — all rooted in the belief that tribal communities have the inherent strength and wisdom to drive their own development.
+                  After years of grassroots experience, AYUSH formally registered as an NGO
+                  in <strong>2011</strong> under the Society Registration Act, 1860 and the
+                  Bombay Public Trusts Act, 1950. Today, the organization works across
+                  India in collaboration with communities, government departments, CSR
+                  partners, volunteers, academic institutions, and development
+                  organizations.
                 </p>
+
                 <p>
-                  We believe in a participatory approach where communities are not passive recipients but active agents of change. Our programs are designed, implemented, and evaluated with deep community involvement.
+                  AYUSH is committed to preserving tribal heritage while creating modern
+                  opportunities. The organization is the
+                  <strong> Proprietor and Authorized User of the Warli Painting
+                    Geographical Indication (GI)</strong>, has been recognized among
+                  <strong> National Best Practices</strong>, and has received
+                  <strong> UN ECOSOC Special Consultative Status</strong>. Through social
+                  entrepreneurship and community-driven initiatives, AYUSH continues to
+                  strengthen the tribal ecosystem for future generations.
                 </p>
               </div>
             </div>
             <div className="relative">
               <img src={IMAGES.tribal1} alt="AYUSH Community" className="rounded-xl grayscale w-full" />
               <div className="absolute -bottom-6 -left-6 bg-white border border-gray-100 rounded-lg p-5 shadow-lg">
-                <div className="text-3xl font-bold text-gray-900">19+</div>
-                <div className="text-sm text-gray-500">Years of Impact</div>
+                <div className="text-3xl font-bold text-gray-900">25+</div>
+                <div className="text-sm text-gray-500">Years of Community Service</div>
               </div>
             </div>
           </div>

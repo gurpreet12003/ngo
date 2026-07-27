@@ -19,7 +19,7 @@ const socialProfiles = [
     icon: FaFacebookF,
     color: 'group-hover:bg-[#1877F2]',
   },
-  
+
   {
     name: 'YouTube',
     url: 'https://www.youtube.com/user/adiyuva',
@@ -47,7 +47,7 @@ export default function ContactUs() {
     name: '', email: '', subject: '', message: ''
   });
 
-  const handleSubmit = (e: { preventDefault: () => void; }) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     const mailtoLink = `mailto:ayush@adiyuva.in?subject=${encodeURIComponent(formData.subject)}&body=${encodeURIComponent(`Name: ${formData.name}\nEmail: ${formData.email}\n\n${formData.message}`)}`;
     window.location.href = mailtoLink;
@@ -67,7 +67,7 @@ export default function ContactUs() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Form */}
             <div>
-              <h2 className="text-2xl font-bold text-gray-900 font-serif mb-6">Send us a Message</h2>
+              <h2 className="text-2xl font-bold text-gray-900 font-serif mb-6"> Send us a Message</h2>
               <form onSubmit={handleSubmit} className="space-y-5">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                   <div>
@@ -193,43 +193,37 @@ export default function ContactUs() {
             <p className="text-gray-500 mt-2">Follow us on social media for regular updates.</p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-4xl mx-auto">
-            {socialProfiles.map((profile, idx) => (
-              <a
-                key={idx}
-                href={profile.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-3 bg-white border border-gray-100 rounded-xl p-4 hover:shadow-md transition-all group"
-              >
-               <>
-  {(() => {
-    const Icon = profile.icon;
+            {socialProfiles.map((profile, idx) => {
+              const Icon = profile.icon;
 
-    return (
-      <>
-        <div
-          className={`w-11 h-11 rounded-xl bg-gray-100 flex items-center justify-center
-          text-gray-800 transition-all duration-300
-          ${profile.color}
-          group-hover:text-white`}
-        >
-          <Icon className="text-lg" />
-        </div>
+              return (
+                <a
+                  key={idx}
+                  href={profile.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-3 bg-white border border-gray-100 rounded-xl p-4 hover:shadow-md transition-all group"
+                >
+                  <div
+                    className={`w-11 h-11 rounded-xl bg-gray-100 flex items-center justify-center
+        text-gray-800 transition-all duration-300
+        ${profile.color}
+        group-hover:text-white`}
+                  >
+                    <Icon className="text-lg" />
+                  </div>
 
-        <div>
-          <p className="text-sm font-semibold text-gray-900 group-hover:text-gray-950">
-            {profile.name}
-          </p>
-          <p className="text-xs text-gray-500">
-            {profile.type}
-          </p>
-        </div>
-      </>
-    );
-  })()}
-</>
-              </a>
-            ))}
+                  <div>
+                    <p className="text-sm font-semibold text-gray-900 group-hover:text-gray-950">
+                      {profile.name}
+                    </p>
+                    <p className="text-xs text-gray-500">
+                      {profile.type}
+                    </p>
+                  </div>
+                </a>
+              );
+            })}
           </div>
         </div>
       </section>
