@@ -19,7 +19,7 @@ export const IMAGES = {
   nature: 'https://images.pexels.com/photos/5264383/pexels-photo-5264383.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200',
   art: 'https://images.pexels.com/photos/22820076/pexels-photo-22820076.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200',
   farmers: 'https://images.pexels.com/photos/20356777/pexels-photo-20356777.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200',
-  YouthLeadership:"Youth_Leadership.jpg",
+  YouthLeadership:"/Youth_Leadership.jpg",
   career_guid:"/Career_Guidance.jpg",
   socialAwareness:"/Social_Awareness.jpg",
   socialEntrepren:"/Social_Entrepreneruship.jpg",
@@ -96,7 +96,7 @@ export const programCategories = [
       impact:
         "A strong network of youth leaders now conducts awareness campaigns, social initiatives, and village development activities.",
       cta: "Register Your Interest",
-      image: IMAGES.workshop2,
+      image: IMAGES.YouthLeadership,
     },
   ],
 },
