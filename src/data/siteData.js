@@ -20,7 +20,7 @@ export const IMAGES = {
   art: 'https://images.pexels.com/photos/22820076/pexels-photo-22820076.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200',
   farmers: 'https://images.pexels.com/photos/20356777/pexels-photo-20356777.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200',
   YouthLeadership:"Youth_Leadership.jpg",
-  career_guid:"/public/Career_Guidance.jpg",
+  career_guid:"/Career_Guidance.jpg",
   socialAwareness:"/Social_Awareness.jpg",
   socialEntrepren:"/Social_Entrepreneruship.jpg",
   tribal_empowerment:"/Tribal_Empowerment.jpg"
