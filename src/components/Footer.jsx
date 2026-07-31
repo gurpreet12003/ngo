@@ -48,10 +48,7 @@ export default function Footer() {
   className="w-24 h-24 object-contain"
 />
   <div>
-    <h3 className="font-bold text-lg">AYUSH</h3>
-    <p className="text-sm text-gray-400 tracking-wider uppercase">
-     Adivasi Yuva Seva Sangh,
-    </p>
+    <h3 className="font-bold text-lg"> Adivasi Yuva Seva Sangh</h3>
     <p className="text-xs text-gray-400 tracking-wider uppercase">
      Collaborative social Entrepreneurship platform
     </p>

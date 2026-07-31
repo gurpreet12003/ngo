@@ -8,10 +8,7 @@ const involvementOptions = [
     description:
       "Lend your time, skills, and energy to support awareness campaigns, education, mentoring, and community development activities across tribal regions.",
     scope: "Community outreach, education, awareness drives, mentoring",
-    tasks:
-      "Teaching, conducting workshops, mentoring students, organizing campaigns and field activities.",
-    impact:
-      "Become part of a volunteer network creating lasting change in tribal communities.",
+    
     link: "https://forms.google.com",
     linkLabel: "Join as a Volunteer",
   },
@@ -21,10 +18,7 @@ const involvementOptions = [
     description:
       "Gain hands-on experience in grassroots tribal development while working on rural projects, research, and community initiatives.",
     scope: "Field research, project management, documentation, social initiatives",
-    tasks:
-      "Research, surveys, impact assessment, community engagement and reporting.",
-    impact:
-      "Develop practical experience while contributing to meaningful social change.",
+   
     link: "https://forms.google.com",
     linkLabel: "Apply for Internship",
   },
@@ -34,10 +28,7 @@ const involvementOptions = [
     description:
       "Join AYUSH as a full-time or part-time team member and build a career dedicated to tribal development and social impact.",
     scope: "Program management, field operations, administration, communications",
-    tasks:
-      "Coordinate projects, manage programs and strengthen long-term community initiatives.",
-    impact:
-      "Work with purpose while improving the lives of indigenous communities.",
+    
     link: "https://forms.google.com",
     linkLabel: "View Job Openings",
   },
@@ -47,10 +38,7 @@ const involvementOptions = [
     description:
       "Support our education, health, leadership, and livelihood initiatives through financial sponsorship.",
     scope: "Educational kits, workshops, health camps, community projects",
-    tasks:
-      "Sponsor specific programs and receive regular impact updates.",
-    impact:
-      "Your support directly empowers tribal families and youth.",
+   
     link: "#",
     linkLabel: "Sponsor a Program",
   },
@@ -60,10 +48,7 @@ const involvementOptions = [
     description:
       "Become an active member of AYUSH and participate in governance, events, and long-term organizational planning.",
     scope: "Membership and organizational participation",
-    tasks:
-      "Attend meetings, support events, contribute ideas, and participate in decision making.",
-    impact:
-      "Help shape the future direction of AYUSH.",
+  
     link: "https://forms.google.com",
     linkLabel: "Become a Member",
   },
@@ -73,10 +58,7 @@ const involvementOptions = [
     description:
       "Contribute your professional skills or resources. Designers, developers, photographers, writers, translators, and donors are all welcome.",
     scope: "Skill-based volunteering and resource contribution",
-    tasks:
-      "Content creation, technology support, design, photography, translation, equipment donation.",
-    impact:
-      "Every contribution strengthens our reach and community impact.",
+   
     link: "#",
     linkLabel: "Contribute Today",
   },
@@ -86,10 +68,7 @@ const involvementOptions = [
     description:
       "Partner with AYUSH to implement sustainable Corporate Social Responsibility initiatives that create measurable social impact.",
     scope: "CSR implementation, employee engagement, development projects",
-    tasks:
-      "Co-design and support community development initiatives aligned with CSR objectives.",
-    impact:
-      "Build long-term, sustainable impact together.",
+    
     link: "mailto:ayush@adiyuva.in",
     linkLabel: "Explore CSR Partnerships",
   },
@@ -99,10 +78,7 @@ const involvementOptions = [
     description:
       "We welcome healthcare professionals, educators, trainers, researchers, and NGOs to jointly implement impactful community initiatives.",
     scope: "Technical expertise and collaborative projects",
-    tasks:
-      "Conduct workshops, provide expert guidance and co-create community programs.",
-    impact:
-      "Expand the reach and quality of grassroots development initiatives.",
+   
     link: "mailto:ayush@adiyuva.in",
     linkLabel: "Collaborate with Us",
   },
@@ -112,10 +88,7 @@ const involvementOptions = [
     description:
       "Partner with AYUSH to advance research, capacity building, innovation, and sustainable tribal development.",
     scope: "Universities, NGOs, Government, CSR, Social Enterprises",
-    tasks:
-      "Research collaboration, field projects, training, innovation and knowledge sharing.",
-    impact:
-      "Create scalable and sustainable development models together.",
+  
     link: "mailto:ayush@adiyuva.in",
     linkLabel: "Partner with Us",
   },
@@ -125,9 +98,9 @@ export default function GetInvolved() {
   return (
     <div>
       <PageHeader
-        title="Lets Do It Together"
+        title="Lets do it together"
         subtitle="There are many ways to be part of the change. Choose how you'd like to contribute."
-        breadcrumbs={[{ label: 'Lets Do It Together' }]}
+        breadcrumbs={[{ label: 'Lets do it together' }]}
       />
 
       {/* Involvement Options */}
@@ -143,8 +116,7 @@ export default function GetInvolved() {
                 <p className="text-sm text-gray-500 mt-2">{option.description}</p>
                 <div className="mt-4 space-y-2 flex-1">
                   <div><span className="text-xs font-medium text-gray-400 uppercase">Scope:</span><p className="text-xs text-gray-600">{option.scope}</p></div>
-                  <div><span className="text-xs font-medium text-gray-400 uppercase">Tasks:</span><p className="text-xs text-gray-600">{option.tasks}</p></div>
-                  <div><span className="text-xs font-medium text-gray-400 uppercase">Impact:</span><p className="text-xs text-gray-600">{option.impact}</p></div>
+                 
                 </div>
                 <a
                   href={option.link}

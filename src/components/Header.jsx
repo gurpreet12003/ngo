@@ -20,7 +20,7 @@ const navItems = [
       { label: 'History & Milestones', path: '/about/history' },
       { label: 'Leadership Team', path: '/about/leadership' },
       { label: 'Organization Profile', path: '/about/org-profile' },
-      { label: 'Transparency', path: '/about/transparency' },
+      
     ],
   },
   {
@@ -224,11 +224,11 @@ export default function Header() {
               />
               <div>
                 <h1 className="text-lg lg:text-xl font-bold text-gray-900 leading-tight tracking-tight">
-                  AYUSH
+                Adivasi Yuva Seva Sangh
                 </h1>
 
-                <p className="text-[10px] lg:text-xs text-gray-500 leading-none tracking-wider uppercase">
-                  Adivasi Yuva Seva Sangh
+                <p className="text-[10px] lg:text-[10px] text-gray-500 leading-none tracking-wider uppercase">
+                  Collaborative social Entrepreneurship platform
                 </p>
               </div>
             </Link>

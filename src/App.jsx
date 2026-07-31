@@ -6,7 +6,7 @@ import VisionMission from './pages/about/VisionMission';
 import HistoryMilestones from './pages/about/HistoryMilestones';
 import LeadershipTeam from './pages/about/LeadershipTeam';
 import OrgProfile from './pages/about/OrgProfile';
-import Transparency from './pages/about/Transparency';
+
 import Programs from './pages/Programs';
 import EducationalGuidance from './pages/programs/EducationalGuidance';
 import YouthLeadership from './pages/programs/YouthLeadership';
@@ -30,7 +30,7 @@ export default function App() {
           <Route path="about/history" element={<HistoryMilestones />} />
           <Route path="about/leadership" element={<LeadershipTeam />} />
           <Route path="about/org-profile" element={<OrgProfile />} />
-          <Route path="about/transparency" element={<Transparency />} />
+        
           <Route path="programs" element={<Programs />} />
           <Route path="programs/education" element={<EducationalGuidance />} />
           <Route path="programs/education/:activityId" element={<ActivityPage category="education" />} />
