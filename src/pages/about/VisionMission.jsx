@@ -4,23 +4,23 @@ import { IMAGES } from '../../data/siteData';
 const values = [
   {
     title: "Unity & Volunteerism",
-    desc: "Strengthening tribal communities through collective effort, collaboration, and the spirit of giving back to society.",
+    desc: "Strengthening community through collective effort.",
   },
   {
     title: "Empowerment",
-    desc: "Providing education, mentorship, skills, and leadership opportunities that enable tribal youth to become self-reliant.",
+    desc: " Providing education, skills, and leadership opportunities.",
   },
   {
     title: "Cultural Pride",
-    desc: "Preserving and promoting Adivasi traditions, languages, arts, indigenous knowledge, and cultural identity.",
+    desc: "Preserving and promoting tribal traditions and identity.",
   },
   {
     title: "Sustainability",
-    desc: "Encouraging environmentally responsible practices and community-led development for future generations.",
+    desc: " Advocating eco-friendly practices and environmental care.",
   },
   {
     title: "Integrity & Social Responsibility",
-    desc: "Building trust, accountability, ethical leadership, and a strong sense of responsibility towards society.",
+    desc: "Building trust and accountability within communities.",
   },
   {
     title: "Knowledge Sharing",
@@ -54,14 +54,69 @@ const pillars = [
   },
 ];
 const objectives = [
-  "Establish mentorship programs for academic guidance, career development, and professional networking.",
-  "Facilitate vocational training, entrepreneurship, and digital literacy for tribal youth.",
-  "Organize cultural festivals, workshops, and initiatives to preserve tribal art, music, language, and indigenous knowledge.",
-  "Document and digitize traditional knowledge for future generations.",
-  "Develop confident tribal youth leaders through leadership training and community engagement.",
-  "Promote sustainable livelihoods through entrepreneurship, self-help groups, and eco-friendly practices.",
-  "Conduct environmental awareness campaigns, tree plantation drives, and biodiversity conservation initiatives.",
-  "Build partnerships with educational institutions, NGOs, government agencies, and volunteers to maximize community impact.",
+  {
+    title: "Education & Skill Development",
+    desc: "Establish mentorship programs for academic and career guidance while facilitating vocational training and digital literacy for tribal youth.",
+  },
+  {
+    title: "Cultural Preservation",
+    desc: "Organize cultural festivals and workshops to promote tribal art, music, and language, while documenting and digitizing indigenous knowledge for future generations.",
+  },
+  {
+    title: "Youth Leadership & Social Responsibility",
+    desc: "Create leadership training modules for tribal youth and launch community service initiatives that strengthen social responsibility and community bonds.",
+  },
+  {
+    title: "Sustainable Livelihoods",
+    desc: "Support entrepreneurship, self-help groups, eco-friendly livelihood initiatives, and sustainable agriculture in tribal communities.",
+  },
+  {
+    title: "Environmental Stewardship",
+    desc: "Conduct awareness campaigns on conservation and climate resilience while implementing tree plantation drives and biodiversity conservation projects.",
+  },
+  {
+    title: "Networking & Partnerships",
+    desc: "Build alliances with educational institutions, NGOs, and government bodies while developing a volunteer network for resource sharing and capacity building.",
+  },
+];
+
+const sdgs = [
+  {
+    no: "04",
+    title: "Quality Education",
+    why: "AYUSH focuses on education and skill development for tribal youth through mentorship, vocational training, and digital literacy programs.",
+    impact: "Improves access to inclusive and equitable education, reducing dropout rates and enhancing employability.",
+  },
+  {
+    no: "08",
+    title: "Decent Work and Economic Growth",
+    why: "Promotes sustainable livelihoods, entrepreneurship, and self-help groups in tribal communities.",
+    impact: "Creates economic opportunities and reduces poverty through skill-based employment.",
+  },
+  {
+    no: "10",
+    title: "Reduced Inequalities",
+    why: "Works to empower marginalized tribal communities, ensuring equal access to resources and opportunities.",
+    impact: "Bridges gaps between tribal and mainstream society, fostering social inclusion.",
+  },
+  {
+    no: "11",
+    title: "Sustainable Cities and Communities",
+    why: "Strengthens community bonds and promotes cultural heritage preservation.",
+    impact: "Builds resilient tribal communities with strong cultural identity and sustainable practices.",
+  },
+  {
+    no: "13",
+    title: "Climate Action",
+    why: "Implements tree plantation drives, biodiversity projects, and eco-friendly livelihood initiatives.",
+    impact: "Contributes to climate resilience and environmental conservation.",
+  },
+  {
+    no: "15",
+    title: "Life on Land",
+    why: "Protects forests and biodiversity through awareness and conservation programs.",
+    impact: "Ensures sustainable use of terrestrial ecosystems and indigenous knowledge preservation.",
+  },
 ];
 
 export default function VisionMission() {
@@ -124,41 +179,41 @@ export default function VisionMission() {
 
       {/* pillar  */}
       <section className="bg-white">
-  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-20">
-    <div className="text-center mb-14">
-      <p className="text-sm uppercase tracking-[0.2em] text-gray-500 mb-2">
-        Our Vision
-      </p>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-20">
+          <div className="text-center mb-14">
+            <p className="text-sm uppercase tracking-[0.2em] text-gray-500 mb-2">
+              Our Vision
+            </p>
 
-      <h2 className="text-3xl lg:text-4xl font-bold font-serif text-black">
-        Key Pillars
-      </h2>
+            <h2 className="text-3xl lg:text-4xl font-bold font-serif text-black">
+              Key Pillars
+            </h2>
 
-      <div className="w-20 h-px bg-black mx-auto mt-4"></div>
-    </div>
-
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-      {pillars.map((pillar, index) => (
-        <div
-          key={index}
-          className="group bg-white border border-gray-200 rounded-2xl p-8 transition-all duration-300 hover:border-black hover:shadow-xl"
-        >
-          <div className="w-12 h-12 rounded-full border-2 border-black text-black flex items-center justify-center font-bold text-lg mb-6 group-hover:bg-black group-hover:text-white transition-all duration-300">
-            {index + 1}
+            <div className="w-20 h-px bg-black mx-auto mt-4"></div>
           </div>
 
-          <h3 className="text-xl font-semibold text-black mb-4">
-            {pillar.title}
-          </h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {pillars.map((pillar, index) => (
+              <div
+                key={index}
+                className="group bg-white border border-gray-200 rounded-2xl p-8 transition-all duration-300 hover:border-black hover:shadow-xl"
+              >
+                <div className="w-12 h-12 rounded-full border-2 border-black text-black flex items-center justify-center font-bold text-lg mb-6 group-hover:bg-black group-hover:text-white transition-all duration-300">
+                  {index + 1}
+                </div>
 
-          <p className="text-gray-600 leading-7">
-            {pillar.desc}
-          </p>
+                <h3 className="text-xl font-semibold text-black mb-4">
+                  {pillar.title}
+                </h3>
+
+                <p className="text-gray-600 leading-7">
+                  {pillar.desc}
+                </p>
+              </div>
+            ))}
+          </div>
         </div>
-      ))}
-    </div>
-  </div>
-</section>
+      </section>
 
       {/* Mission */}
       <section className="bg-gray-50">
@@ -235,17 +290,101 @@ export default function VisionMission() {
             </div>
             <div className="space-y-3">
               {objectives.map((obj, idx) => (
-                <div key={idx} className="flex items-start gap-4 bg-white rounded-lg p-4 border border-gray-100">
-                  <span className="w-7 h-7 bg-gray-900 text-white rounded-full flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">
-                    {idx + 1}
-                  </span>
-                  <p className="text-gray-700">{obj}</p>
+                <div
+                  key={idx}
+                  className="bg-white rounded-xl p-6 border border-gray-100 hover:shadow-md transition-all"
+                >
+                  <div className="flex items-start gap-4">
+                    <span className="w-8 h-8 bg-black text-white rounded-full flex items-center justify-center text-sm font-bold shrink-0">
+                      {idx + 1}
+                    </span>
+
+                    <div>
+                      <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                        {obj.title}
+                      </h3>
+
+                      <p className="text-gray-600 leading-7">
+                        {obj.desc}
+                      </p>
+                    </div>
+                  </div>
                 </div>
               ))}
             </div>
           </div>
         </div>
       </section>
+
+
+      {/* SDGs */}
+<section className="bg-white">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-20">
+    <div className="text-center mb-12">
+      <p className="text-sm uppercase tracking-widest text-gray-500">
+        United Nations Sustainable Development Goals
+      </p>
+
+      <h2 className="text-3xl lg:text-4xl font-bold font-serif mt-2">
+        SDGs AYUSH is Working On
+      </h2>
+    </div>
+
+   <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+  {sdgs.map((sdg) => (
+    <div
+      key={sdg.no}
+      className="bg-white border border-gray-200 rounded-2xl p-8 hover:shadow-lg transition"
+    >
+      <div className="w-14 h-14 rounded-full border-2 border-black flex items-center justify-center mb-6">
+        <span className="text-xl font-bold">{sdg.no}</span>
+      </div>
+
+      <h3 className="text-2xl font-bold mb-2">
+        SDG {sdg.no}
+      </h3>
+
+      <h4 className="text-lg font-semibold mb-5">
+        {sdg.title}
+      </h4>
+
+      <div className="mb-5">
+        <h5 className="font-semibold text-black mb-2">Why?</h5>
+        <p className="text-gray-600 leading-7">
+          {sdg.why}
+        </p>
+      </div>
+
+      <div>
+        <h5 className="font-semibold text-black mb-2">Impact</h5>
+        <p className="text-gray-600 leading-7">
+          {sdg.impact}
+        </p>
+      </div>
+    </div>
+  ))}
+</div>
+
+    <div className="mt-12 bg-gray-50 rounded-xl p-8">
+      <h3 className="text-2xl font-semibold mb-4">
+        Additional Indirect Contributions
+      </h3>
+
+      <ul className="space-y-3 text-gray-700">
+        <li>
+          <strong>SDG 3 – Good Health & Well-being:</strong> Through awareness
+          programs and promotion of traditional medicinal knowledge.
+        </li>
+
+        <li>
+          <strong>SDG 17 – Partnerships for the Goals:</strong> By collaborating
+          with NGOs, educational institutions, government bodies, volunteers,
+          and community organizations.
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
     </div>
   );
 }

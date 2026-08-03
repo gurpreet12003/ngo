@@ -340,65 +340,41 @@ export const leadershipTeam = {
 
 export const milestones = [
   {
-    year: "1999",
+    year: "1999-2003",
     title: "Early Roots",
     description:
-      "AYUSH started as an informal initiative by tribal students to guide and support fellow tribal students pursuing higher education in Mumbai, Thane, and Palghar districts."
+      "Experience and gone through practical experience of difficulties to tribal students for Higher studies at Mumbai/Thane/Palghar District in Maharashtra Started with Casual supporting/guiding to tribal students Continued for several years and observed other Models.",
   },
   {
-    year: "2003",
+    year: "2003-2006",
     title: "Concept Building",
     description:
-      "Studied successful community development models, identified tribal youth priorities, and developed the initial vision and activity plans for AYUSH."
+      "Observe & Study activities Programs by other organizations Prepare concept considering youth Priorities and Tribal community Draft ideas about activity plans.",
   },
   {
-    year: "2007",
+    year: "2007-2010",
     title: "Initiating Activities",
     description:
-      "Started community meetings, group discussions, career and education guidance programs, social networking initiatives, and Warli Painting study activities with artisans."
+      "Started to get together, Picnic, Meeting to come together and brainstorm on concepts and ideas for activities Created Social networking Profiles on various platforms and started networking Group discussion, Career & Education Guidance activities for tribal students Initiated Warli Painting Study group and activities with Artisans.",
   },
   {
-    year: "2011",
+    year: "2011-2016",
     title: "Organization Formation",
     description:
-      "Officially registered AYUSH as an NGO under the Societies Registration Act, 1860, and began structured voluntary activities across tribal communities."
+      "Registered as NGO under Society registration act 1860, Organizing activities Obtained Warli Painting Geographical Indication under Intellectual Property Rights Formal Voluntary activities and events as per resource availability.",
   },
   {
-    year: "2012",
-    title: "Warli Painting GI",
-    description:
-      "Successfully obtained the Geographical Indication (GI) registration for Warli Painting under the Intellectual Property Rights framework and initiated post-GI development activities."
-  },
-  {
-    year: "2017",
+    year: "2017-2020",
     title: "Organization Strengthening",
     description:
-      "Expanded collaborations with the Tribal Development Department, Government of Maharashtra, CSR partners, sponsors, and strengthened the AYUSH Warli Painting Cluster."
+      "Started activities collaborative with Tribal Development Department, Govt. of Maharashtra Started Collaborative activities with CSR and other Sponsors Strengthen AYUSH Warli Painting Cluster activities with collaborative model.",
   },
   {
-    year: "2021",
+    year: "2021-2025",
     title: "Enhancing Effectiveness",
     description:
-      "Strengthened collaboration with organizations, volunteers, government agencies, CSR partners, and communities while promoting sustainable social entrepreneurship."
+      "Collaborative working with various Organizations, Volunteers, Etc UN ECOSOC Granted Special Consultative Status to the organization Strengthening Social Entrepreneurship Model for sustainability (Community+ Govt + CSR + Volunteers).",
   },
-  {
-    year: "2023",
-    title: "International Recognition",
-    description:
-      "AYUSH was granted Special Consultative Status by the United Nations ECOSOC, recognizing its contribution to tribal development and community empowerment."
-  },
-  {
-    year: "2024",
-    title: "National Recognition",
-    description:
-      "Recognized among the National Best Practices by ISRN and the Ministry of Culture for preserving traditional knowledge and promoting tribal empowerment."
-  },
-  {
-    year: "2025",
-    title: "Building the Future",
-    description:
-      "Continuing to strengthen a sustainable tribal ecosystem through social entrepreneurship based on tribal art, craft, agriculture, forest produce, and collaborative partnerships."
-  }
 ];
 
 export const successStories = [

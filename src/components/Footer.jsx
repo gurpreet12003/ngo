@@ -49,13 +49,11 @@ export default function Footer() {
 />
   <div>
     <h3 className="font-bold text-lg"> Adivasi Yuva Seva Sangh</h3>
-    <p className="text-xs text-gray-400 tracking-wider uppercase">
-     Collaborative social Entrepreneurship platform
-    </p>
+ 
   </div>
 </div>
             <p className="text-gray-400 text-sm leading-relaxed">
-              Empowering Adivasi communities through education, leadership, and sustainable development since 2005.
+               Collaborative social Entrepreneurship platform
             </p>
             <div className="flex gap-3 mt-5">
               {socialLinks.map((s) => (
