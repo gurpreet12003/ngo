@@ -30,7 +30,7 @@ const individualOptions = [
     title: "Internship",
     description:
       "Gain hands-on experience in grassroots tribal development through field projects, research, documentation, and community initiatives.",
-    link: "https://forms.google.com",
+    link: "https://forms.gle/kZECH8DYzRfqwHqKA ",
     linkLabel: "Apply for Internship",
   },
   {
@@ -54,7 +54,7 @@ const individualOptions = [
     title: "Membership",
     description:
       "Become an active member of AYUSH and participate in governance, activities, events and long-term organizational development.",
-    link: "https://forms.google.com",
+    link: "https://forms.gle/1zK5wj4nxXwCBRrH8",
     linkLabel: "Become a Member",
   },
 ];
@@ -170,25 +170,29 @@ const donateOptions = [
       </div>
     ),
   },
-  {
-    id: "razorpay",
-    icon: <Heart className="w-6 h-6" />,
-    title: "Contribute Online",
-    content: (
-      <div className="text-center">
-        <p className="text-gray-600 mb-6">
-          Donate securely using Credit Card, Debit Card,
-          UPI, Net Banking or Wallet through Razorpay.
-        </p>
-        <button
-          className="inline-flex items-center justify-center gap-2 bg-black text-white px-6 py-3 rounded-full hover:bg-gray-800 transition-colors"
-        >
-          <Heart className="w-5 h-5" />
-          Donate via Razorpay
-        </button>
-      </div>
-    ),
-  },
+ {
+  id: "razorpay",
+  icon: <Heart className="w-6 h-6" />,
+  title: "Contribute Online",
+  content: (
+    <div className="text-center">
+      <p className="text-gray-600 mb-6">
+        Donate securely using Credit Card, Debit Card,
+        UPI, Net Banking or Wallet through Razorpay.
+      </p>
+
+      <a
+        href="https://razorpay.me/@adiyuva"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="inline-flex items-center justify-center gap-2 bg-black text-white px-6 py-3 rounded-full hover:bg-gray-800 transition-colors"
+      >
+        <Heart className="w-5 h-5" />
+        Donate via Razorpay
+      </a>
+    </div>
+  ),
+},
 ];
 
 export default function GetInvolved() {
