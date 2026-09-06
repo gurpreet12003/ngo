@@ -1,3 +1,4 @@
+
 "use client";
 
 import { useState } from "react";
@@ -30,7 +31,7 @@ const individualOptions = [
     title: "Internship",
     description:
       "Gain hands-on experience in grassroots tribal development through field projects, research, documentation, and community initiatives.",
-    link: "https://forms.gle/kZECH8DYzRfqwHqKA ",
+    link: "https://forms.gle/kZECH8DYzRfqwHqKA",
     linkLabel: "Apply for Internship",
   },
   {
@@ -105,53 +106,54 @@ const donateOptions = [
           <p className="text-xs uppercase tracking-wide text-gray-500">
             Account Name
           </p>
-          <p className="font-medium">
-            AYUSH - Adivasi Yuva Shakti
-          </p>
+          <p className="font-medium">Adivasi Yuva Seva Sangh</p>
         </div>
+
         <div>
           <p className="text-xs uppercase tracking-wide text-gray-500">
             Bank Name
           </p>
-          <p className="font-medium">
-            State Bank of India
-          </p>
+          <p className="font-medium">State Bank of India</p>
         </div>
+
+        <div>
+          <p className="text-xs uppercase tracking-wide text-gray-500">
+            Branch Name
+          </p>
+          <p className="font-medium">Dahanu Road (00354)</p>
+        </div>
+
         <div>
           <p className="text-xs uppercase tracking-wide text-gray-500">
             Account Number
           </p>
-          <p className="font-medium">
-            XXXXXXXXXXXX
-          </p>
+          <p className="font-medium">3191 9096 256</p>
         </div>
+
         <div>
           <p className="text-xs uppercase tracking-wide text-gray-500">
             IFSC Code
           </p>
-          <p className="font-medium">
-            SBIN0XXXXXX
-          </p>
+          <p className="font-medium">SBIN0000354</p>
         </div>
+
         <div>
           <p className="text-xs uppercase tracking-wide text-gray-500">
             UPI ID
           </p>
-          <p className="font-medium">
-            ayush@sbi
-          </p>
+          <p className="font-medium">9246361249@okbizaxis</p>
         </div>
+
         <div>
           <p className="text-xs uppercase tracking-wide text-gray-500">
             Tax Benefit
           </p>
-          <p className="font-medium">
-            Eligible under 80G
-          </p>
+          <p className="font-medium">Eligible under 80G</p>
         </div>
       </div>
     ),
   },
+
   {
     id: "qr",
     icon: <QrCode className="w-6 h-6" />,
@@ -159,271 +161,410 @@ const donateOptions = [
     content: (
       <div className="text-center">
         <img
-          src="/images/donation-qr.png"
+          src="/qr.jpeg"
           alt="Donation QR"
           className="w-56 h-56 mx-auto border rounded-lg"
         />
+
         <p className="text-gray-600 mt-6">
-          Scan this QR using Google Pay, PhonePe, Paytm,
-          BHIM or any UPI application.
+          Scan this QR using Google Pay, PhonePe, Paytm, BHIM or any UPI
+          application.
         </p>
       </div>
     ),
   },
- {
-  id: "razorpay",
-  icon: <Heart className="w-6 h-6" />,
-  title: "Contribute Online",
-  content: (
-    <div className="text-center">
-      <p className="text-gray-600 mb-6">
-        Donate securely using Credit Card, Debit Card,
-        UPI, Net Banking or Wallet through Razorpay.
-      </p>
 
-      <a
-        href="https://razorpay.me/@adiyuva"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="inline-flex items-center justify-center gap-2 bg-black text-white px-6 py-3 rounded-full hover:bg-gray-800 transition-colors"
-      >
-        <Heart className="w-5 h-5" />
-        Donate via Razorpay
-      </a>
-    </div>
-  ),
-},
+  {
+    id: "razorpay",
+    icon: <Heart className="w-6 h-6" />,
+    title: "Contribute Online",
+    content: (
+      <div className="text-center">
+        <p className="text-gray-600 mb-6">
+          Donate securely using Credit Card, Debit Card, UPI, Net Banking or
+          Wallet through Razorpay.
+        </p>
+
+        <a
+          href="https://razorpay.me/@adiyuva"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center justify-center gap-2 bg-black text-white px-6 py-3 rounded-full hover:bg-gray-800 transition-colors"
+        >
+          <Heart className="w-5 h-5" />
+          Donate via Razorpay
+        </a>
+      </div>
+    ),
+  },
 ];
 
 export default function GetInvolved() {
-  // Accordion state: tracks which item is open per section (single-open mode to minimize scrolling)
-  // Set initial value to `null` instead of 0 if you want all items closed by default
+  // Individuals selected by default
+  const [activeType, setActiveType] = useState("individual");
+
+  // Accordion states
   const [openIndividual, setOpenIndividual] = useState(0);
   const [openOrg, setOpenOrg] = useState(0);
   const [openDonate, setOpenDonate] = useState(0);
 
   return (
     <div>
+      {/* ================= PAGE HEADER ================= */}
       <PageHeader
-        title="Let's Do It Together"
+        title="Let's do it together"
         subtitle="Choose how you would like to contribute towards empowering tribal communities."
-        breadcrumbs={[
-          { label: "Let's Do It Together" },
-        ]}
+        breadcrumbs={[{ label: "Let's do it together" }]}
       />
 
-      {/* ================= FOR INDIVIDUALS ================= */}
+      {/* =====================================================
+          GET INVOLVED
+      ====================================================== */}
       <section className="bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-          <div className="text-center mb-12">
+
+          {/* ================= HEADING ================= */}
+          <div className="text-center mb-10">
             <p className="text-sm font-medium text-gray-500 uppercase tracking-wider">
-              For Individuals
+              Get Involved
             </p>
-            <h2 className="text-3xl font-bold font-serif text-gray-900 mt-2">
+
+            <h2 className="text-3xl md:text-4xl font-bold font-serif text-gray-900 mt-2">
               Choose How You Want to Get Involved
             </h2>
-            <p className="mt-4 text-gray-600 max-w-3xl mx-auto">
-              Whether you want to volunteer, gain practical experience,
-              build your career, contribute your professional skills,
-              or become a member, there are many ways to be part of
-              AYUSH's mission.
+
+            <p className="mt-4 text-gray-600 max-w-3xl mx-auto leading-7">
+              Whether you are an individual looking to contribute your time
+              and skills or an organization looking to create meaningful
+              partnerships, there are many ways to be part of AYUSH's mission.
             </p>
           </div>
 
-          {/* Individuals Accordion (replaces card grid) */}
-          <div className="max-w-3xl mx-auto space-y-4">
-            {individualOptions.map((option, idx) => (
-              <div
-                key={idx}
-                className="bg-white border border-gray-200 rounded-xl overflow-hidden hover:border-black transition-all duration-300"
+          {/* =====================================================
+              INDIVIDUAL / ORGANIZATION TOGGLE
+          ====================================================== */}
+          <div className="flex justify-center mb-10">
+            <div className="inline-flex items-center bg-gray-100 p-1.5 rounded-full border border-gray-200">
+
+              {/* INDIVIDUAL */}
+              <button
+                type="button"
+                onClick={() => setActiveType("individual")}
+                className={`px-6 sm:px-8 py-3 rounded-full text-sm font-medium transition-all duration-300 ${
+                  activeType === "individual"
+                    ? "bg-black text-white shadow-md"
+                    : "text-gray-600 hover:text-gray-900"
+                }`}
               >
-                <button
-                  onClick={() => setOpenIndividual(openIndividual === idx ? null : idx)}
-                  className="w-full flex items-center justify-between px-6 py-5 text-left hover:bg-gray-50 transition-colors"
-                  aria-expanded={openIndividual === idx}
-                >
-                  <div className="flex items-center gap-4">
-                    <div className="w-10 h-10 rounded-lg bg-gray-100 flex items-center justify-center text-gray-700 flex-shrink-0">
-                      {option.icon}
-                    </div>
-                    <h3 className="text-lg font-semibold text-gray-900">{option.title}</h3>
-                  </div>
-                  <ChevronDown
-                    className={`w-5 h-5 text-gray-500 transition-transform duration-300 flex-shrink-0 ${
-                      openIndividual === idx ? "rotate-180" : ""
-                    }`}
-                  />
-                </button>
+                For Individuals
+              </button>
+
+              {/* ORGANIZATION */}
+              <button
+                type="button"
+                onClick={() => setActiveType("organization")}
+                className={`px-6 sm:px-8 py-3 rounded-full text-sm font-medium transition-all duration-300 ${
+                  activeType === "organization"
+                    ? "bg-black text-white shadow-md"
+                    : "text-gray-600 hover:text-gray-900"
+                }`}
+              >
+                For Organizations
+              </button>
+
+            </div>
+          </div>
+
+          {/* =====================================================
+              INDIVIDUAL OPTIONS
+          ====================================================== */}
+          {activeType === "individual" && (
+            <div className="max-w-3xl mx-auto space-y-4">
+
+              {individualOptions.map((option, idx) => (
                 <div
-                  className={`grid transition-all duration-300 ease-in-out ${
-                    openIndividual === idx ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"
-                  }`}
+                  key={idx}
+                  className="bg-white border border-gray-200 rounded-xl overflow-hidden hover:border-black transition-all duration-300"
                 >
-                  <div className="overflow-hidden">
-                    <div className="px-6 pb-6">
-                      <p className="text-sm text-gray-600 leading-7 mb-5">
-                        {option.description}
-                      </p>
-                      <a
-                        href={option.link}
-                        target={option.link !== "#" ? "_blank" : undefined}
-                        rel={option.link !== "#" ? "noopener noreferrer" : undefined}
-                        className="inline-flex items-center justify-center gap-2 bg-black text-white px-5 py-2.5 rounded-full hover:bg-gray-800 transition-colors text-sm"
-                      >
-                        {option.linkLabel}
-                        {option.link !== "#" && <ExternalLink className="w-4 h-4" />}
-                      </a>
+                  {/* Accordion Header */}
+                  <button
+                    type="button"
+                    onClick={() =>
+                      setOpenIndividual(
+                        openIndividual === idx ? null : idx
+                      )
+                    }
+                    className="w-full flex items-center justify-between px-5 sm:px-6 py-5 text-left hover:bg-gray-50 transition-colors"
+                    aria-expanded={openIndividual === idx}
+                  >
+                    <div className="flex items-center gap-4 min-w-0">
+
+                      <div className="w-10 h-10 rounded-lg bg-gray-100 flex items-center justify-center text-gray-700 flex-shrink-0">
+                        {option.icon}
+                      </div>
+
+                      <h3 className="text-base sm:text-lg font-semibold text-gray-900">
+                        {option.title}
+                      </h3>
+
+                    </div>
+
+                    <ChevronDown
+                      className={`w-5 h-5 text-gray-500 transition-transform duration-300 flex-shrink-0 ml-4 ${
+                        openIndividual === idx
+                          ? "rotate-180"
+                          : ""
+                      }`}
+                    />
+                  </button>
+
+                  {/* Accordion Content */}
+                  <div
+                    className={`grid transition-all duration-300 ease-in-out ${
+                      openIndividual === idx
+                        ? "grid-rows-[1fr] opacity-100"
+                        : "grid-rows-[0fr] opacity-0"
+                    }`}
+                  >
+                    <div className="overflow-hidden">
+                      <div className="px-5 sm:px-6 pb-6">
+
+                        <p className="text-sm text-gray-600 leading-7 mb-5">
+                          {option.description}
+                        </p>
+
+                        <a
+                          href={option.link}
+                          target={
+                            option.link !== "#"
+                              ? "_blank"
+                              : undefined
+                          }
+                          rel={
+                            option.link !== "#"
+                              ? "noopener noreferrer"
+                              : undefined
+                          }
+                          className="inline-flex items-center justify-center gap-2 bg-black text-white px-5 py-2.5 rounded-full hover:bg-gray-800 transition-colors text-sm"
+                        >
+                          {option.linkLabel}
+
+                          {option.link !== "#" && (
+                            <ExternalLink className="w-4 h-4" />
+                          )}
+                        </a>
+
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+              ))}
 
-      {/* ================= FOR ORGANIZATIONS ================= */}
-      <section className="bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-          <div className="text-center mb-12">
-            <p className="text-sm font-medium text-gray-500 uppercase tracking-wider">
-              For Organizations
-            </p>
-            <h2 className="text-3xl font-bold font-serif text-gray-900 mt-2">
-              Partner With AYUSH
-            </h2>
-            <p className="mt-4 text-gray-600 max-w-3xl mx-auto">
-              Organizations, institutions, corporate partners and development
-              agencies can work together with AYUSH to create sustainable
-              impact for tribal communities.
-            </p>
-          </div>
+            </div>
+          )}
 
-          {/* Organizations Accordion (replaces card grid) */}
-          <div className="max-w-3xl mx-auto space-y-4">
-            {organizationOptions.map((option, idx) => (
-              <div
-                key={idx}
-                className="bg-white border border-gray-200 rounded-xl overflow-hidden hover:border-black transition-all duration-300"
-              >
-                <button
-                  onClick={() => setOpenOrg(openOrg === idx ? null : idx)}
-                  className="w-full flex items-center justify-between px-6 py-5 text-left hover:bg-gray-50 transition-colors"
-                  aria-expanded={openOrg === idx}
-                >
-                  <div className="flex items-center gap-4">
-                    <div className="w-10 h-10 rounded-lg bg-gray-100 flex items-center justify-center text-gray-700 flex-shrink-0">
-                      {option.icon}
-                    </div>
-                    <h3 className="text-lg font-semibold text-gray-900">{option.title}</h3>
-                  </div>
-                  <ChevronDown
-                    className={`w-5 h-5 text-gray-500 transition-transform duration-300 flex-shrink-0 ${
-                      openOrg === idx ? "rotate-180" : ""
-                    }`}
-                  />
-                </button>
+          {/* =====================================================
+              ORGANIZATION OPTIONS
+          ====================================================== */}
+          {activeType === "organization" && (
+            <div className="max-w-3xl mx-auto space-y-4">
+
+              {organizationOptions.map((option, idx) => (
                 <div
-                  className={`grid transition-all duration-300 ease-in-out ${
-                    openOrg === idx ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"
-                  }`}
+                  key={idx}
+                  className="bg-white border border-gray-200 rounded-xl overflow-hidden hover:border-black transition-all duration-300"
                 >
-                  <div className="overflow-hidden">
-                    <div className="px-6 pb-6">
-                      <p className="text-sm text-gray-600 leading-7 mb-5">
-                        {option.description}
-                      </p>
-                      <a
-                        href={option.link}
-                        target={option.link !== "#" ? "_blank" : undefined}
-                        rel={option.link !== "#" ? "noopener noreferrer" : undefined}
-                        className="inline-flex items-center justify-center gap-2 bg-black text-white px-5 py-2.5 rounded-full hover:bg-gray-800 transition-colors text-sm"
-                      >
-                        {option.linkLabel}
-                        {option.link !== "#" && <ExternalLink className="w-4 h-4" />}
-                      </a>
+                  {/* Accordion Header */}
+                  <button
+                    type="button"
+                    onClick={() =>
+                      setOpenOrg(
+                        openOrg === idx ? null : idx
+                      )
+                    }
+                    className="w-full flex items-center justify-between px-5 sm:px-6 py-5 text-left hover:bg-gray-50 transition-colors"
+                    aria-expanded={openOrg === idx}
+                  >
+                    <div className="flex items-center gap-4 min-w-0">
+
+                      <div className="w-10 h-10 rounded-lg bg-gray-100 flex items-center justify-center text-gray-700 flex-shrink-0">
+                        {option.icon}
+                      </div>
+
+                      <h3 className="text-base sm:text-lg font-semibold text-gray-900">
+                        {option.title}
+                      </h3>
+
+                    </div>
+
+                    <ChevronDown
+                      className={`w-5 h-5 text-gray-500 transition-transform duration-300 flex-shrink-0 ml-4 ${
+                        openOrg === idx
+                          ? "rotate-180"
+                          : ""
+                      }`}
+                    />
+                  </button>
+
+                  {/* Accordion Content */}
+                  <div
+                    className={`grid transition-all duration-300 ease-in-out ${
+                      openOrg === idx
+                        ? "grid-rows-[1fr] opacity-100"
+                        : "grid-rows-[0fr] opacity-0"
+                    }`}
+                  >
+                    <div className="overflow-hidden">
+                      <div className="px-5 sm:px-6 pb-6">
+
+                        <p className="text-sm text-gray-600 leading-7 mb-5">
+                          {option.description}
+                        </p>
+
+                        <a
+                          href={option.link}
+                          target={
+                            option.link !== "#"
+                              ? "_blank"
+                              : undefined
+                          }
+                          rel={
+                            option.link !== "#"
+                              ? "noopener noreferrer"
+                              : undefined
+                          }
+                          className="inline-flex items-center justify-center gap-2 bg-black text-white px-5 py-2.5 rounded-full hover:bg-gray-800 transition-colors text-sm"
+                        >
+                          {option.linkLabel}
+
+                          {option.link !== "#" && (
+                            <ExternalLink className="w-4 h-4" />
+                          )}
+                        </a>
+
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            ))}
-          </div>
+              ))}
+
+            </div>
+          )}
+
         </div>
       </section>
 
-      {/* ================= SUPPORT OUR MISSION ================= */}
+      {/* =====================================================
+          SUPPORT OUR MISSION
+      ====================================================== */}
       <section className="bg-white">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center">
+
           <div className="w-16 h-16 bg-black rounded-full flex items-center justify-center mx-auto mb-6">
             <Heart className="w-7 h-7 text-white" />
           </div>
-          <h2 className="text-3xl font-bold font-serif text-gray-900">
+
+          <h2 className="text-3xl md:text-4xl font-bold font-serif text-gray-900">
             Support Our Mission
           </h2>
+
           <p className="mt-5 text-lg text-gray-600 leading-8">
             Your support enables AYUSH to continue empowering tribal
             communities through education, youth leadership, cultural
             preservation, sustainable livelihoods, environmental stewardship,
             and collaborative partnerships.
           </p>
+
         </div>
       </section>
 
-      {/* ================= CONTRIBUTE FUNDS ================= */}
+      {/* =====================================================
+          CONTRIBUTE FUNDS
+      ====================================================== */}
       <section className="bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+
+          {/* Heading */}
           <div className="text-center mb-12">
+
             <div className="w-16 h-16 bg-black rounded-full flex items-center justify-center mx-auto mb-5">
               <CreditCard className="w-7 h-7 text-white" />
             </div>
-            <h2 className="text-3xl font-bold font-serif text-gray-900">
+
+            <h2 className="text-3xl md:text-4xl font-bold font-serif text-gray-900">
               Contribute Funds
             </h2>
-            <p className="mt-4 text-gray-600 max-w-3xl mx-auto">
-              Every contribution, big or small, helps AYUSH continue empowering
-              tribal communities through education, youth leadership, cultural
-              preservation, livelihoods and sustainable development.
+
+            <p className="mt-4 text-gray-600 max-w-3xl mx-auto leading-7">
+              Every contribution, big or small, helps AYUSH continue
+              empowering tribal communities through education, youth
+              leadership, cultural preservation, livelihoods and sustainable
+              development.
             </p>
+
           </div>
 
-          {/* Donation Options Accordion (replaces 3-column card grid) */}
+          {/* Donation Accordion */}
           <div className="max-w-3xl mx-auto space-y-4">
+
             {donateOptions.map((option, idx) => (
               <div
                 key={option.id}
                 className="bg-white border border-gray-200 rounded-xl overflow-hidden hover:border-black transition-all duration-300"
               >
+
+                {/* Header */}
                 <button
-                  onClick={() => setOpenDonate(openDonate === idx ? null : idx)}
-                  className="w-full flex items-center justify-between px-6 py-5 text-left hover:bg-gray-50 transition-colors"
+                  type="button"
+                  onClick={() =>
+                    setOpenDonate(
+                      openDonate === idx ? null : idx
+                    )
+                  }
+                  className="w-full flex items-center justify-between px-5 sm:px-6 py-5 text-left hover:bg-gray-50 transition-colors"
                   aria-expanded={openDonate === idx}
                 >
-                  <div className="flex items-center gap-4">
+                  <div className="flex items-center gap-4 min-w-0">
+
                     <div className="w-10 h-10 rounded-lg bg-gray-100 flex items-center justify-center text-gray-700 flex-shrink-0">
                       {option.icon}
                     </div>
-                    <h3 className="text-lg font-semibold text-gray-900">{option.title}</h3>
+
+                    <h3 className="text-base sm:text-lg font-semibold text-gray-900">
+                      {option.title}
+                    </h3>
+
                   </div>
+
                   <ChevronDown
-                    className={`w-5 h-5 text-gray-500 transition-transform duration-300 flex-shrink-0 ${
-                      openDonate === idx ? "rotate-180" : ""
+                    className={`w-5 h-5 text-gray-500 transition-transform duration-300 flex-shrink-0 ml-4 ${
+                      openDonate === idx
+                        ? "rotate-180"
+                        : ""
                     }`}
                   />
                 </button>
+
+                {/* Content */}
                 <div
                   className={`grid transition-all duration-300 ease-in-out ${
-                    openDonate === idx ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"
+                    openDonate === idx
+                      ? "grid-rows-[1fr] opacity-100"
+                      : "grid-rows-[0fr] opacity-0"
                   }`}
                 >
                   <div className="overflow-hidden">
-                    <div className="px-6 pb-6">
+                    <div className="px-5 sm:px-6 pb-6">
                       {option.content}
                     </div>
                   </div>
                 </div>
+
               </div>
             ))}
+
           </div>
+
         </div>
       </section>
     </div>

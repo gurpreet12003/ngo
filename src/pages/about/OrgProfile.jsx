@@ -1,4 +1,4 @@
-import { ExternalLink, CheckCircle, XCircle  } from 'lucide-react';
+import { ExternalLink, CheckCircle, XCircle } from 'lucide-react';
 import PageHeader from '../../components/PageHeader';
 import OrganizationChart from '../../components/orgChart';
 
@@ -32,28 +32,124 @@ const orgDetails = [
   },
 ];
 const policies = [
-  { name: 'Anti-Harassment Policy', type: 'PDF' },
-  { name: 'Child Protection Policy', type: 'PDF' },
-  { name: 'Financial Management Policy', type: 'PDF' },
-  { name: 'Human Resources Policy', type: 'PDF' },
-  { name: 'Whistleblower Policy', type: 'PDF' },
-  { name: 'Conflict of Interest Policy', type: 'PDF' },
-  { name: 'Data Protection & Privacy Policy', type: 'PDF' },
-  { name: 'Volunteer Management Policy', type: 'PDF' },
-  { name: 'Environmental & Social Safeguards', type: 'PDF' },
+    {
+    name: 'IT & Internet Usage Policy',
+    type: 'PDF',
+    url: 'https://drive.google.com/file/d/1YTY6vIh3UzVmtJoU6STjeEJcX8apm52Y/view',
+  },
+  {
+    name: 'Anti-Harassment Policy',
+    type: 'PDF',
+    url: '/documents/anti-harassment-policy.pdf',
+  },
+  {
+    name: 'Child Protection Policy',
+    type: 'PDF',
+    url: '/documents/child-protection-policy.pdf',
+  },
+  {
+    name: 'Financial Management Policy',
+    type: 'PDF',
+    url: 'https://drive.google.com/file/d/1St-olBBdoF55a0ybewps4sOzTs9u2v_Q/view',
+  },
+  {
+    name: 'Human Resources Policy',
+    type: 'PDF',
+    url: 'https://drive.google.com/file/d/1-umG2Tbg34FpibL5CjO9JLMfaekQLq4G/view',
+  },
+  {
+    name: 'Whistleblower Policy',
+    type: 'PDF',
+    url: '/documents/whistleblower-policy.pdf',
+  },
+  {
+    name: 'Conflict of Interest Policy',
+    type: 'PDF',
+    url: '/documents/conflict-of-interest-policy.pdf',
+  },
+  {
+    name: 'Data Protection & Privacy Policy',
+    type: 'PDF',
+    url: 'https://drive.google.com/file/d/1_mtvldDClZwTpYzffDBtlbtaFQeYzEmL/view',
+  },
+  {
+    name: 'Volunteer Management Policy',
+    type: 'PDF',
+    url: '/documents/volunteer-management-policy.pdf',
+  },
+  {
+    name: 'Environmental & Social Safeguards',
+    type: 'PDF',
+    url: 'https://drive.google.com/file/d/1fxyOWLSKc_chQQlwkEA4P4x6ofweULPU/view',
+  },
+  {
+    name: 'Posh Policy',
+    type: 'PDF',
+    url: 'https://drive.google.com/file/d/1GgG_9ttMWxGU5HdJZVUfvE3fZono_OmG/view',
+  },
+    {
+    name: 'Policy on Media and Communication',
+    type: 'PDF',
+    url: 'https://drive.google.com/file/d/1Co2uhr1b14vowpCUxr0dW_AKVxUco_gE/view',
+  },
+    {
+    name: 'Partnership & Collaboration Policy',
+    type: 'PDF',
+    url: 'https://drive.google.com/file/d/1QfOHhNMBCKZd30Me629EIJz2GvKOwg5M/view',
+  },
 ];
 
 const reports = [
-  { name: 'Annual Report 2023-24', type: 'Annual Report' },
-  { name: 'Annual Report 2022-23', type: 'Annual Report' },
-  { name: 'Annual Report 2021-22', type: 'Annual Report' },
-  { name: 'Annual Report 2020-21', type: 'Annual Report' },
-  { name: 'Audit Report 2023-24', type: 'Audit Report' },
-  { name: 'Audit Report 2022-23', type: 'Audit Report' },
-  { name: 'Audit Report 2021-22', type: 'Audit Report' },
-  { name: 'Audit Report 2020-21', type: 'Audit Report' },
-  { name: 'Impact Assessment Report 2023', type: 'Impact Report' },
-  { name: 'Financial Statements 2023-24', type: 'Financial' },
+  {
+    name: 'Annual Report 2023-24',
+    type: 'Annual Report',
+    url: '/documents/annual-report-2023-24.pdf',
+  },
+  {
+    name: 'Annual Report 2022-23',
+    type: 'Annual Report',
+    url: '/documents/annual-report-2022-23.pdf',
+  },
+  {
+    name: 'Annual Report 2021-22',
+    type: 'Annual Report',
+    url: '/documents/annual-report-2021-22.pdf',
+  },
+  {
+    name: 'Annual Report 2020-21',
+    type: 'Annual Report',
+    url: '/documents/annual-report-2020-21.pdf',
+  },
+  {
+    name: 'Audit Report 2023-24',
+    type: 'Audit Report',
+    url: '/documents/audit-report-2023-24.pdf',
+  },
+  {
+    name: 'Audit Report 2022-23',
+    type: 'Audit Report',
+    url: '/documents/audit-report-2022-23.pdf',
+  },
+  {
+    name: 'Audit Report 2021-22',
+    type: 'Audit Report',
+    url: '/documents/audit-report-2021-22.pdf',
+  },
+  {
+    name: 'Audit Report 2020-21',
+    type: 'Audit Report',
+    url: '/documents/audit-report-2020-21.pdf',
+  },
+  {
+    name: 'Impact Assessment Report 2023',
+    type: 'Impact Report',
+    url: '/documents/impact-assessment-report-2023.pdf',
+  },
+  {
+    name: 'Financial Statements 2023-24',
+    type: 'Financial',
+    url: '/documents/financial-statements-2023-24.pdf',
+  },
 ];
 
 const dueDiligence = [
@@ -103,7 +199,7 @@ export default function OrgProfile() {
       </section>
 
       {/* Organization Chart */}
-    <OrganizationChart/>
+      <OrganizationChart />
 
       {/* Policies */}
       <section className="bg-white">
@@ -114,7 +210,12 @@ export default function OrgProfile() {
               {policies.map((policy, idx) => (
                 <div key={idx} className="flex items-center justify-between px-6 py-4 hover:bg-gray-50 transition-colors">
                   <span className="text-sm text-gray-700">{policy.name}</span>
-                  <a href="#" className="inline-flex items-center gap-1 text-xs font-medium text-gray-500 hover:text-gray-900 transition-colors">
+                  <a
+                    href={policy.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1 text-xs font-medium text-gray-500 hover:text-gray-900 transition-colors"
+                  >
                     <ExternalLink className="w-3.5 h-3.5" />
                     {policy.type}
                   </a>
@@ -124,78 +225,84 @@ export default function OrgProfile() {
           </div>
         </div>
 
-         <div>
-     
- {/* Reports */}
-      <section className="bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-          <div className="max-w-3xl mx-auto">
-            <h2 className="text-2xl font-bold text-gray-900 font-serif mb-8">Annual Reports & Audits</h2>
-            <div className="border border-gray-200 rounded-xl overflow-hidden">
-              <table className="w-full">
-                <thead>
-                  <tr className="bg-gray-900 text-white">
-                    <th className="px-6 py-3 text-left text-xs font-medium uppercase tracking-wider">Document</th>
-                    <th className="px-6 py-3 text-left text-xs font-medium uppercase tracking-wider">Type</th>
-                    <th className="px-6 py-3 text-right text-xs font-medium uppercase tracking-wider">Download</th>
-                  </tr>
-                </thead>
-                <tbody className="divide-y divide-gray-100">
-                  {reports.map((report, idx) => (
-                    <tr key={idx} className={idx % 2 === 0 ? 'bg-white' : 'bg-gray-50'}>
-                      <td className="px-6 py-3.5 text-sm text-gray-700">{report.name}</td>
-                      <td className="px-6 py-3.5">
-                        <span className="text-xs font-medium px-2.5 py-1 bg-gray-100 text-gray-600 rounded-full">{report.type}</span>
-                      </td>
-                      <td className="px-6 py-3.5 text-right">
-                        <a href="#" className="inline-flex items-center gap-1 text-xs font-medium text-gray-500 hover:text-gray-900 transition-colors">
-                          <ExternalLink className="w-3.5 h-3.5" /> PDF
-                        </a>
-                      </td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-          </div>
-        </div>
-      </section>
+        <div>
 
-      {/* Due Diligence */}
-      <section className="bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-          <div className="max-w-3xl mx-auto">
-            <h2 className="text-2xl font-bold text-gray-900 font-serif mb-8">Due Diligence Status</h2>
-            <div className="border border-gray-200 rounded-xl overflow-hidden bg-white">
-              <table className="w-full">
-                <thead>
-                  <tr className="bg-gray-900 text-white">
-                    <th className="px-6 py-3 text-left text-xs font-medium uppercase tracking-wider">Compliance Item</th>
-                    <th className="px-6 py-3 text-center text-xs font-medium uppercase tracking-wider">Status</th>
-                    <th className="px-6 py-3 text-left text-xs font-medium uppercase tracking-wider">Details</th>
-                  </tr>
-                </thead>
-                <tbody className="divide-y divide-gray-100">
-                  {dueDiligence.map((item, idx) => (
-                    <tr key={idx} className={idx % 2 === 0 ? 'bg-white' : 'bg-gray-50'}>
-                      <td className="px-6 py-3.5 text-sm text-gray-700">{item.item}</td>
-                      <td className="px-6 py-3.5 text-center">
-                        {item.status ? (
-                          <CheckCircle className="w-5 h-5 text-gray-700 mx-auto" />
-                        ) : (
-                          <XCircle className="w-5 h-5 text-gray-400 mx-auto" />
-                        )}
-                      </td>
-                      <td className="px-6 py-3.5 text-sm text-gray-500">{item.details}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
+          {/* Reports */}
+          <section className="bg-white">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+              <div className="max-w-3xl mx-auto">
+                <h2 className="text-2xl font-bold text-gray-900 font-serif mb-8">Annual Reports & Audits</h2>
+                <div className="border border-gray-200 rounded-xl overflow-hidden">
+                  <table className="w-full">
+                    <thead>
+                      <tr className="bg-gray-900 text-white">
+                        <th className="px-6 py-3 text-left text-xs font-medium uppercase tracking-wider">Document</th>
+                        <th className="px-6 py-3 text-left text-xs font-medium uppercase tracking-wider">Type</th>
+                        <th className="px-6 py-3 text-right text-xs font-medium uppercase tracking-wider">Download</th>
+                      </tr>
+                    </thead>
+                    <tbody className="divide-y divide-gray-100">
+                      {reports.map((report, idx) => (
+                        <tr key={idx} className={idx % 2 === 0 ? 'bg-white' : 'bg-gray-50'}>
+                          <td className="px-6 py-3.5 text-sm text-gray-700">{report.name}</td>
+                          <td className="px-6 py-3.5">
+                            <span className="text-xs font-medium px-2.5 py-1 bg-gray-100 text-gray-600 rounded-full">{report.type}</span>
+                          </td>
+                          <td className="px-6 py-3.5 text-right">
+                            <a
+                              href={report.url}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="inline-flex items-center gap-1 text-xs font-medium text-gray-500 hover:text-gray-900 transition-colors"
+                            >
+                              <ExternalLink className="w-3.5 h-3.5" />
+                              PDF
+                            </a>
+                          </td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              </div>
             </div>
-          </div>
+          </section>
+
+          {/* Due Diligence */}
+          <section className="bg-gray-50">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+              <div className="max-w-3xl mx-auto">
+                <h2 className="text-2xl font-bold text-gray-900 font-serif mb-8">Due Diligence Status</h2>
+                <div className="border border-gray-200 rounded-xl overflow-hidden bg-white">
+                  <table className="w-full">
+                    <thead>
+                      <tr className="bg-gray-900 text-white">
+                        <th className="px-6 py-3 text-left text-xs font-medium uppercase tracking-wider">Compliance Item</th>
+                        <th className="px-6 py-3 text-center text-xs font-medium uppercase tracking-wider">Status</th>
+                        <th className="px-6 py-3 text-left text-xs font-medium uppercase tracking-wider">Details</th>
+                      </tr>
+                    </thead>
+                    <tbody className="divide-y divide-gray-100">
+                      {dueDiligence.map((item, idx) => (
+                        <tr key={idx} className={idx % 2 === 0 ? 'bg-white' : 'bg-gray-50'}>
+                          <td className="px-6 py-3.5 text-sm text-gray-700">{item.item}</td>
+                          <td className="px-6 py-3.5 text-center">
+                            {item.status ? (
+                              <CheckCircle className="w-5 h-5 text-gray-700 mx-auto" />
+                            ) : (
+                              <XCircle className="w-5 h-5 text-gray-400 mx-auto" />
+                            )}
+                          </td>
+                          <td className="px-6 py-3.5 text-sm text-gray-500">{item.details}</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </section>
         </div>
-      </section>
-    </div>
       </section>
     </div>
   );

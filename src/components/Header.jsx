@@ -23,114 +23,116 @@ const navItems = [
       
     ],
   },
-  {
-    label: "Programs",
-    path: "/programs",
-    children: [
-      {
-        label: "Educational & Career Guidance",
-        path: "/programs/education",
-        children: [
-          {
-            label: "Career Counseling Workshops",
-            path: "/programs/education/career-counseling",
-          },
-          {
-            label: "Scholarship Assistance Program",
-            path: "/programs/education/scholarship-assistance",
-          },
-          {
-            label: "Digital Literacy Campaign",
-            path: "/programs/education/digital-literacy",
-          },
-          {
-            label: "Community Study Circles",
-            path: "/programs/education/study-circles",
-          },
-        ],
-      },
+ 
+{
+  label: "Programs",
+  path: "/programs",
+  children: [
+    {
+      label: "Education & Career Guidance",
+      path: "/programs/education",
+      children: [
+        {
+          label: "Education Awareness",
+          path: "/programs/education/education-awareness",
+        },
+        {
+          label: "Career Guidance Program",
+          path: "/programs/education/career-guidance",
+        },
+        {
+          label: "Knowledge Pools",
+          path: "/programs/education/knowledge-pools",
+        },
+        {
+          label: "Mentoring Programs",
+          path: "/programs/education/mentoring-programs",
+        },
+      ],
+    },
 
-      {
-        label: "Youth Leadership",
-        path: "/programs/youth-leadership",
-        children: [
-          {
-            label: "Youth Leadership Camps",
-            path: "/programs/youth-leadership/leadership-camps",
-          },
-          {
-            label: "Youth Parliament Sessions",
-            path: "/programs/youth-leadership/youth-parliament",
-          },
-          {
-            label: "AYUSH Fellowship Program",
-            path: "/programs/youth-leadership/fellowship-program",
-          },
-        ],
-      },
+    {
+      label: "Youth Leadership",
+      path: "/programs/youth-leadership",
+      children: [
+        {
+          label: "Tribal Youth Leadership Program",
+          path: "/programs/youth-leadership/tribal-youth-leadership",
+        },
+        {
+          label: "Technology and Community",
+          path: "/programs/youth-leadership/technology-and-community",
+        },
+        {
+          label: "Cultural Identity Awareness",
+          path: "/programs/youth-leadership/cultural-identity-awareness",
+        },
+      ],
+    },
 
-      {
-        label: "Tribal Empowerment",
-        path: "/programs/tribal-empowerment",
-        children: [
-          {
-            label: "Tribal Rights Awareness",
-            path: "/programs/tribal-empowerment/rights-awareness",
-          },
-          {
-            label: "Cultural Heritage Preservation",
-            path: "/programs/tribal-empowerment/cultural-preservation",
-          },
-          {
-            label: "Sustainable Livelihood Programs",
-            path: "/programs/tribal-empowerment/sustainable-livelihoods",
-          },
-          {
-            label: "Health & Nutrition Awareness",
-            path: "/programs/tribal-empowerment/health-nutrition",
-          },
-        ],
-      },
+    {
+      label: "Tribal Empowerment",
+      path: "/programs/tribal-empowerment",
+      children: [
+        {
+          label: "Tribal Rights Awareness",
+          path: "/programs/tribal-empowerment/tribal-rights-awareness",
+        },
+        {
+          label: "Cultural Intellectual Awareness",
+          path: "/programs/tribal-empowerment/cultural-intellectual-awareness",
+        },
+        {
+          label: "Traditional Knowledge Awareness",
+          path: "/programs/tribal-empowerment/traditional-knowledge-awareness",
+        },
+      ],
+    },
 
-      {
-        label: "Social Entrepreneurship",
-        path: "/programs/social-entrepreneurship",
-        children: [
-          {
-            label: "Social Enterprise Incubation",
-            path: "/programs/social-entrepreneurship/incubation-center",
-          },
-          {
-            label: "Tribal Products Marketplace",
-            path: "/programs/social-entrepreneurship/tribal-products",
-          },
-          {
-            label: "Agricultural Enterprise Development",
-            path: "/programs/social-entrepreneurship/agri-enterprise",
-          },
-        ],
-      },
+    {
+      label: "Social Awareness",
+      path: "/programs/social-awareness",
+      children: [
+        {
+          label: "Social Responsibilities",
+          path: "/programs/social-awareness/social-responsibilities",
+        },
+        {
+          label: "Health Awareness",
+          path: "/programs/social-awareness/health-awareness",
+        },
+        {
+          label: "Environment and Biodiversity",
+          path: "/programs/social-awareness/environment-biodiversity",
+        },
+        {
+          label: "Administration and Governance",
+          path: "/programs/social-awareness/administration-governance",
+        },
+      ],
+    },
 
-      {
-        label: "Social Awareness",
-        path: "/programs/social-awareness",
-        children: [
-          {
-            label: "Gender Equality Campaigns",
-            path: "/programs/social-awareness/gender-equality",
-          },
-          {
-            label: "Environmental Conservation Drives",
-            path: "/programs/social-awareness/environmental-conservation",
-          },
-          {
-            label: "Anti-Addiction Awareness Program",
-            path: "/programs/social-awareness/anti-addiction",
-          },
-        ],
-      },
-    ],
-  },
+    {
+      label: "Social Entrepreneurship",
+      path: "/programs/social-entrepreneurship",
+      children: [
+        {
+          label: "Potential & Models",
+          path: "/programs/social-entrepreneurship/potential-models",
+        },
+        {
+          label: "Ecosystem Development",
+          path: "/programs/social-entrepreneurship/ecosystem-development",
+        },
+        {
+          label: "Marketplace and Networking",
+          path: "/programs/social-entrepreneurship/marketplace-networking",
+        },
+      ],
+    },
+  ],
+},
+
   { label: 'Lets Do It Together', path: '/get-involved' },
   { label: 'Media', path: '/media' },
   { label: 'Contact', path: '/contact' },

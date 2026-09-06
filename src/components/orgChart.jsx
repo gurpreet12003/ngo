@@ -120,93 +120,121 @@ export default function OrganizationChart() {
           </div>
 
         </div>
-                {/* ================= CORE ACTIVITY TEAMS ================= */}
+   
+{/* ================= CORE ACTIVITY TEAMS ================= */}
 
-        <div className="mt-20">
+<div className="mt-20">
 
-          <div className="text-center mb-10">
-            <h2 className="text-3xl font-bold">
-              II. Core Activity Teams
-            </h2>
+  <div className="text-center mb-10">
+    <h2 className="text-3xl font-bold">
+      II. Core Activity Teams
+    </h2>
+
+    <p className="text-gray-500 mt-2">
+      Dedicated teams working together for community development.
+    </p>
+  </div>
+
+  <div className="grid lg:grid-cols-2 gap-12">
+
+    {teams.map((team, index) => (
+
+  <div
+    key={index}
+    className="relative bg-white border border-gray-200 rounded-xl shadow-sm overflow-hidden hover:shadow-lg transition"
+  >
+
+    {/* ================= TEAM TITLE - FIRST ================= */}
+
+    <div className="bg-gray-200 px-6 py-6 text-center">
+
+      <p className="text-xs uppercase tracking-[0.2em] text-gray-500 mb-1">
+        Core Activity Team
+      </p>
+
+      <h3 className="font-bold text-xl text-gray-900">
+        {team.title}
+      </h3>
+
+      <p className="text-sm text-gray-600 mt-1">
+        {team.subtitle}
+      </p>
+
+    </div>
+
+
+    {/* ================= TEAM HEAD - SECOND ================= */}
+
+    <div className="text-center py-8">
+
+      <p className="text-xs uppercase tracking-[0.2em] text-gray-400 font-medium">
+        Team Head
+      </p>
+
+      <div className="w-16 h-16 rounded-full border-2 border-gray-300 bg-gray-100 flex items-center justify-center mx-auto mt-3">
+        <User className="w-8 h-8 text-gray-500" />
+      </div>
+
+      <h4 className="font-bold text-lg text-gray-900 mt-3">
+        {team.lead}
+      </h4>
+
+      <p className="text-sm text-gray-500 mt-1">
+        Team Lead
+      </p>
+
+    </div>
+
+
+    {/* ================= CONNECTOR ================= */}
+
+    <div className="flex justify-center">
+      <div className="w-[2px] h-6 bg-gray-300"></div>
+    </div>
+
+
+    {/* ================= TEAM MEMBERS - THIRD ================= */}
+
+    <div className="bg-gray-50 px-6 py-7">
+
+      <div className="text-center mb-5">
+        <p className="text-xs uppercase tracking-[0.2em] text-gray-400 font-medium">
+          Team Members
+        </p>
+      </div>
+
+      <div className="flex justify-center flex-wrap gap-5">
+
+        {Array.from({ length: team.members }).map((_, i) => (
+
+          <div
+            key={i}
+            className="flex flex-col items-center"
+          >
+
+            <div className="w-12 h-12 rounded-full border bg-white flex items-center justify-center">
+              <User className="w-6 h-6 text-gray-500" />
+            </div>
+
+            <span className="text-xs text-gray-500 mt-2">
+              Member {i + 1}
+            </span>
+
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-12">
+        ))}
 
-            {teams.map((team, index) => (
+      </div>
 
-              <div
-                key={index}
-                className="relative bg-white border rounded-xl shadow-sm overflow-hidden hover:shadow-lg transition"
-              >
+    </div>
 
-                {/* Top Members */}
+  </div>
 
-                <div className="bg-gray-100 px-6 py-4">
+))}
+  </div>
 
-                  <div className="flex justify-center gap-3">
+</div>
 
-                    {Array.from({ length: team.members }).map((_, i) => (
-
-                      <div
-                        key={i}
-                        className="w-10 h-10 rounded-full border bg-white flex items-center justify-center"
-                      >
-                        <User className="w-5 h-5 text-gray-500" />
-                      </div>
-
-                    ))}
-
-                  </div>
-
-                </div>
-
-                {/* Team Name */}
-
-                <div className="bg-gray-200 px-6 py-5 text-center">
-
-                  <h3 className="font-bold text-lg">
-                    {team.title}
-                  </h3>
-
-                  <p className="text-sm text-gray-600 mt-1">
-                    {team.subtitle}
-                  </p>
-
-                </div>
-
-                {/* Connector */}
-
-                <div className="flex justify-center">
-                  <div className="w-[2px] h-8 bg-gray-300"></div>
-                </div>
-
-                {/* Lead */}
-
-                <div className="pb-8 flex flex-col items-center">
-
-                  <div className="w-14 h-14 rounded-full border bg-gray-100 flex items-center justify-center">
-
-                    <User className="w-7 h-7 text-gray-500"/>
-
-                  </div>
-
-                  <h4 className="font-semibold mt-3">
-                    {team.lead}
-                  </h4>
-
-                  <p className="text-sm text-gray-500">
-                    Team Lead
-                  </p>
-
-                </div>
-
-              </div>
-
-            ))}
-
-          </div>
-
-        </div>
                 {/* ================= VOLUNTEERS ================= */}
 
         <div className="mt-24">
