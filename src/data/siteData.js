@@ -602,7 +602,7 @@ export const impactStats = [
   },
   {
     label: "20+ Yrs Experience on field",
-    value: "40M+",
+    value: "20+",
     icon: "Eye",                // Views/Impressions
   },
 ];
