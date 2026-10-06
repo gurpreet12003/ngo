@@ -1,9 +1,9 @@
 
 
 export const IMAGES = {
-  hero1: '/hero1.avif',
-  hero2: '/hero2.avif',
-  hero3: '/farmer.avif',
+  hero1: '/hero1.JPG',
+  hero2: '/hero2.JPG',
+  hero3: '/hero3.JPG',
   tribal1: '/tribal1.avif',
   tribal2: '/tribal2.avif',
   tribal3: '/tribal3.avif',
@@ -31,7 +31,29 @@ environmentAndBio:"/eniviormentAndBio.jpg",
 technology:"/techAwareness.jpg",
 health:"/healthAwareness.jpg",
 governance:"/goverment.jpg",
-marketplace:"/market.jpg"
+marketplace:"/market.jpg",
+s1:"/S1.jpg",
+s2:"/S2.JPG",
+s3:"/S3.jpg",
+s4:"/S4.JPG",
+u1:"/U1.JPG",
+u2:"/U2.JPG",
+u3:"/U3.JPG",
+e1:"/E1.jpg",
+e2:"/E2.jpg",
+e3:"/E3.JPG",
+e4:"/E4.jpg",
+sa1:"/Sa1.JPG",
+sa2:"/Sa2.jpg",
+sa3:"/Sa3.JPG",
+se1:"/Se1.JPG",
+se2:"/Se2.JPG",
+se3:"/Se3.jpg",
+te1:"/Te1.JPG",
+te2:"/Te2.jpg",
+te3:"/Te3.JPG",
+yl1:"/Yl1.jpg",
+yl2:"/Yl2.JPG"
 };
 
 // export const programCategories = [
@@ -226,7 +248,7 @@ export const programCategories = [
           "EdTech & Career Platforms: Provide free access to entrance exam discovery portals, stream selection tests, or college application trackers.",
           "Government & NGO Partners: Share updated toolkits on state/central tribal scholarships and admission timelines.",
         ],
-        image: IMAGES.education1,
+        image: IMAGES.e1,
       },
 
       {
@@ -242,7 +264,7 @@ export const programCategories = [
           "Corporate Volunteers: Host industry-specific career talks detailing required skill sets, workplace expectations, and entry-level hiring avenues.",
           "Coaching Academies: Provide discounted or sponsored test-prep materials for competitive exams (NEET, JEE, Staff Selection, State Public Services).",
         ],
-        image: IMAGES.education2,
+        image: IMAGES.e2,
       },
 
       {
@@ -258,7 +280,7 @@ export const programCategories = [
           "Libraries & Publishers: Donate physical textbooks, competitive exam reference books, or digital e-learning subscriptions.",
           "Tech Partners: Help build, host, and maintain a searchable, low-bandwidth digital library and professional directory portal.",
         ],
-        image: IMAGES.education3,
+        image: IMAGES.e3,
       },
 
       {
@@ -274,7 +296,7 @@ export const programCategories = [
           "Universities & Student Unions: Pair senior undergraduate/postgraduate students with incoming tribal freshers for peer-to-peer campus integration.",
           "Mentorship & Mental Health Organizations: Provide basic counselling training modules to volunteer mentors to ensure effective guidance.",
         ],
-        image: IMAGES.mentor,
+        image: IMAGES.e4,
       },
     ],
   },
@@ -316,7 +338,7 @@ export const programCategories = [
           "Digital Marketing & Media Professionals: Volunteer to train youth in social media advocacy, digital storytelling, content creation, and online safety.",
           "EdTech & E-Governance Partners: Provide software training or apps that help local volunteers map village data, track health metrics, or access legal aid digitally.",
         ],
-        image: IMAGES.technology,
+        image: IMAGES.yl1,
       },
 
       {
@@ -332,7 +354,7 @@ export const programCategories = [
           "Art & Cultural Institutions: Provide platforms, galleries, or festival stages for tribal youth to showcase traditional music, dance, and indigenous crafts to urban audiences.",
           "Media & Content Creators: Help youth produce documentaries, podcasts, or digital archives that accurately represent tribal heritage and challenge mainstream stereotypes.",
         ],
-        image: IMAGES.cultureAwareness,
+        image: IMAGES.yl2,
       },
     ],
   },
@@ -358,7 +380,7 @@ export const programCategories = [
           "Human Rights & Legal NGOs: Develop simplified, bilingual toolkits, posters, and audio-visual guides explaining constitutional rights in local tribal dialects.",
           "District Administration & Panchayats: Partner to conduct joint workshops for Gram Sabha members on local governance rights and statutory powers.",
         ],
-        image: IMAGES.tribal2,
+        image: IMAGES.te1,
       },
 
       {
@@ -374,7 +396,7 @@ export const programCategories = [
           "Cultural Foundations & Research Bodies: Fund documentation projects that record unique artistic techniques, indigenous seeds, and traditional craftsmanship.",
           "Design Schools & Ethical Brands: Partner with local artisans for fair-trade collaborations that honor original motifs while providing sustainable royalties.",
         ],
-        image: IMAGES.art,
+        image: IMAGES.te2,
       },
 
       {
@@ -390,7 +412,7 @@ export const programCategories = [
           "Environmental NGOs & Climate Organizations: Collaborate on community-led reforestation, soil conservation, and traditional water management projects.",
           "Youth & Educational Centers: Organize intergenerational learning circles where village elders teach youth traditional botany, sustainable harvesting, and natural resource management.",
         ],
-        image: IMAGES.traditionalKnowledge,
+        image: IMAGES.te3,
       },
     ],
   },
@@ -400,7 +422,7 @@ export const programCategories = [
     title: "Social Awareness",
     description:
       "Building village capacity requires healthy, informed, and civic-minded citizens. This program aims to bridge critical information gaps regarding public health, environmental stewardship, civic duties, and government welfare, empowering rural families to make informed, life-improving decisions.",
-    image: IMAGES.socialAwareness,
+    image: IMAGES.sa1,
 
     activities: [
       {
@@ -416,7 +438,7 @@ export const programCategories = [
           "Corporate CSR: Support structured employee-volunteering programs where tribal employees can return to their home districts to lead capacity-building workshops.",
           "Media & Storytellers: Highlight and publish success stories of local heroes who are giving back, setting a powerful precedent for younger generations.",
         ],
-        image: IMAGES.volunteer1,
+        image: IMAGES.sa1,
       },
 
       {
@@ -432,7 +454,7 @@ export const programCategories = [
           "Public Health NGOs: Co-create culturally sensitive, local-language health awareness campaigns (street plays, audio messages) focusing on sanitation, vaccination, and nutrition.",
           "Pharma & Medical Suppliers: Sponsor basic first-aid kits, menstrual hygiene products, and nutritional supplements for village-level distribution.",
         ],
-        image: IMAGES.health,
+        image: IMAGES.sa2,
       },
 
       {
@@ -448,7 +470,7 @@ export const programCategories = [
           "Water Conservation Experts: Provide technical assistance for building check dams, traditional rainwater harvesting structures, and reviving local aquifers.",
           "Corporate Sustainability (ESG) Partners: Fund community-owned solar power installations or eco-friendly waste management systems in tribal villages.",
         ],
-        image: IMAGES.environmentAndBio,
+        image: IMAGES.sa3,
       },
 
       {
@@ -490,7 +512,7 @@ export const programCategories = [
           "Design & Culinary Experts: Volunteer time to refine product recipes, improve packaging aesthetics, and enhance product shelf life without compromising traditional authenticity.",
           "Impact Investors: Provide early-stage micro-grants or low-interest seed capital to pilot new youth-led micro-enterprises.",
         ],
-        image: IMAGES.tribal1,
+        image: IMAGES.se1,
       },
 
       {
@@ -506,7 +528,7 @@ export const programCategories = [
           "Technology & Machinery Providers: Donate or subsidize low-cost, eco-friendly processing units (e.g., solar dryers, oil extraction mills, bamboo processing tools).",
           "Supply Chain & Logistics Companies: Help establish affordable cold-chain, warehousing, and transportation links connecting remote villages to regional hubs.",
         ],
-        image: IMAGES.farmers,
+        image: IMAGES.se2,
       },
 
       {
@@ -522,7 +544,7 @@ export const programCategories = [
           "Retail Chains & Corporate Buyers: Integrate authentic tribal products into corporate gifting catalogs, eco-friendly retail stores, and ethical procurement programs.",
           "Trade Associations & Expo Organizers: Sponsor stall spaces and travel allowances for tribal entrepreneurs to participate in national trade fairs, organic expos, and buyer-seller meets.",
         ],
-        image: IMAGES.marketplace,
+        image: IMAGES.se3,
       },
     ],
   },
@@ -559,27 +581,27 @@ export const sdgGoals = [
 
 export const impactStats = [
   {
-    label: "Program Implemented",
+    label: "Voluntary Programs",
     value: "130+",
     icon: "Briefcase",          // Projects/Programs
   },
   {
-    label: "Voluntary Efforts Spent",
+    label: "Hrs Efforts Spent",
     value: "30K+",
     icon: "HeartHandshake",     // Volunteer & Community Service
   },
   {
-    label: "Sponsored Program Implemented (CSR & Govt)",
+    label: "Sponsored Program",
     value: "9+",
     icon: "Landmark",           // Government & CSR
   },
   {
-    label: "Group Members In Networks",
+    label: "In Network of",
     value: "1.2+ Lakhs",
     icon: "Users",              // Members/Community
   },
   {
-    label: "Online Ads Impressions",
+    label: "20+ Yrs Experience on field",
     value: "40M+",
     icon: "Eye",                // Views/Impressions
   },
@@ -713,24 +735,24 @@ export const successStories = [
     title: "Empowering Tribal Students Through Mentorship",
     story:
       "Started by former Ashram school students, AYUSH built a strong mentoring network connecting professionals, alumni, and students. Through career guidance, motivational sessions, and community support, hundreds of tribal youth have been inspired to pursue higher education and professional careers.",
-    image: IMAGES.education1,
+    image: IMAGES.s1,
   },
   {
     title: "Building a Strong Tribal Community Network",
     story:
       "What began as a small grassroots initiative evolved into the Adivasi Yuva Shakti movement and later Adivasi Yuva Seva Sangh. Today, the organization connects tribal communities, professionals, and volunteers to create sustainable solutions through education, social entrepreneurship, and cultural preservation.",
-    image: IMAGES.tribal3,
+    image: IMAGES.s2,
   },
   {
     title: "Preserving Warli Heritage Through Innovation",
     story:
       "AYUSH played a pioneering role in securing the Geographical Indication (GI) for Warli Painting, the first GI from Palghar and the first tribal craft to receive this recognition. The initiative now empowers artisans with market access, fair opportunities, and a community-owned brand while protecting their cultural heritage.",
-    image: IMAGES.art,
+    image: IMAGES.s3,
   },
   {
     title: "Women Empowerment Through Warli Art",
     story:
       "With support from CSR partners, AYUSH trained women in Warli painting, product design, and handicraft production. The initiative created flexible income opportunities for homemakers and students while strengthening the traditional role of women in preserving Warli culture.",
-    image: IMAGES.tribal2, // or IMAGES.tribal2 if women image is unavailable
+    image: IMAGES.s4, // or IMAGES.tribal2 if women image is unavailable
   },
 ];

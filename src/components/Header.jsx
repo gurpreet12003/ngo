@@ -9,6 +9,7 @@ import {
   FaInstagram,
   FaLinkedinIn,
   FaXTwitter,
+  FaWhatsapp,
 } from "react-icons/fa6";
 const navItems = [
   { label: 'Home', path: '/' },
@@ -199,6 +200,15 @@ export default function Header() {
               >
                 <FaLinkedinIn className="text-sm" />
               </a>
+              <a
+  href="https://wa.me/919246361249"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="w-8 h-8 rounded-full flex items-center justify-center hover:bg-[#25D366] transition-all duration-300"
+  aria-label="WhatsApp"
+>
+  <FaWhatsapp className="text-sm" />
+</a>
             </div>
           </div>
         </div>

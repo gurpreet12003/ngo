@@ -136,7 +136,7 @@ export default function VisionMission() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-20">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="relative rounded-2xl overflow-hidden">
-              <img src={IMAGES.nature} alt="Nature" className="w-full aspect-[4/3] object-cover" />
+              <img src={"/V1.JPG"} alt="Nature" className="w-full aspect-[4/3] object-cover" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
               <div className="absolute bottom-0 left-0 right-0 p-8">
                 <p className="text-white/70 text-sm uppercase tracking-wider mb-2">Our Vision</p>
@@ -253,7 +253,7 @@ export default function VisionMission() {
               </div>
             </div>
             <div className="order-1 lg:order-2 relative">
-              <img src={IMAGES.art} alt="Tribal Art" className="rounded-xl grayscale w-full aspect-[4/3] object-cover" />
+              <img src={"M1.JPG"} alt="Tribal Art" className="rounded-xl grayscale w-full aspect-[4/3] object-cover" />
             </div>
           </div>
         </div>

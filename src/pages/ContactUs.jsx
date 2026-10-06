@@ -7,9 +7,10 @@ import {
   FaInstagram,
   FaLinkedinIn,
   FaXTwitter,
-  FaGlobe,
+  FaWhatsapp,
 } from 'react-icons/fa6';
 import PageHeader from '../components/PageHeader';
+
 
 const socialProfiles = [
   {
@@ -27,6 +28,7 @@ const socialProfiles = [
     icon: FaYoutube,
     color: 'group-hover:bg-[#FF0000]',
   },
+
   {
     name: 'Twitter / X',
     url: 'https://twitter.com/adiyuva',
@@ -34,6 +36,7 @@ const socialProfiles = [
     icon: FaXTwitter,
     color: 'group-hover:bg-black',
   },
+
   {
     name: 'Instagram',
     url: 'https://www.instagram.com/adiyuva',
@@ -41,7 +44,24 @@ const socialProfiles = [
     icon: FaInstagram,
     color: 'group-hover:bg-[#E4405F]',
   },
+
+  {
+    name: 'LinkedIn',
+    url: 'YOUR_LINKEDIN_URL_HERE',
+    type: 'Profile',
+    icon: FaLinkedinIn,
+    color: 'group-hover:bg-[#0A66C2]',
+  },
+
+  {
+    name: 'WhatsApp',
+    url: 'https://wa.me/919246361249',
+    type: 'Chat with us',
+    icon: FaWhatsapp,
+    color: 'group-hover:bg-[#25D366]',
+  },
 ];
+
 export default function ContactUs() {
   const [formData, setFormData] = useState({
     name: '', email: '', subject: '', message: ''
@@ -192,7 +212,7 @@ export default function ContactUs() {
             <h2 className="text-2xl font-bold text-gray-900 font-serif">Connect With Us</h2>
             <p className="text-gray-500 mt-2">Follow us on social media for regular updates.</p>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-4xl mx-auto">
+         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-5xl mx-auto"> 
             {socialProfiles.map((profile, idx) => {
               const Icon = profile.icon;
 

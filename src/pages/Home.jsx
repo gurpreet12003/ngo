@@ -18,14 +18,14 @@ const heroSlides = [
     link: '/about',
   },
   {
-    image: IMAGES.tribal3,
+    image: IMAGES.hero2,
     title: 'Strength Through\nUnity & Culture',
     subtitle: 'Preserving heritage while creating pathways to progress for indigenous communities.',
     cta: 'Our Programs',
     link: '/programs',
   },
   {
-    image: IMAGES.education1,
+    image: IMAGES.hero3,
     title: 'Education\nChanges Everything',
     subtitle: 'From career guidance to digital literacy — transforming lives one student at a time.',
     cta: 'Get Involved',
@@ -73,7 +73,7 @@ export default function Home() {
             <img
               src={slide.image}
               alt=""
-              className="w-full h-full object-cover opacity-40"
+              className="w-full h-full object-cover opacity-40 origin-center"
             />
           </div>
         ))}
@@ -270,9 +270,9 @@ export default function Home() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
-              { title: 'Tribal Youth Education Drive 2024', date: 'Ongoing', desc: 'Enrolling 500 tribal students in career guidance programs across Palghar district.', image: IMAGES.education2 },
-              { title: 'Warli Art Festival', date: 'March 2024', desc: 'Annual celebration of Warli art tradition with workshops, exhibitions, and performances.', image: IMAGES.art },
-              { title: 'Organic Farming Workshop', date: 'April 2024', desc: 'Training 100 farmers in organic certification and sustainable agriculture practices.', image: IMAGES.farmers },
+              { title: 'Tribal Youth Education Drive 2024', date: 'Ongoing', desc: 'Enrolling 500 tribal students in career guidance programs across Palghar district.', image: IMAGES.u1 },
+              { title: 'Warli Art Festival', date: 'March 2024', desc: 'Annual celebration of Warli art tradition with workshops, exhibitions, and performances.', image: IMAGES.u2 },
+              { title: 'Organic Farming Workshop', date: 'April 2024', desc: 'Training 100 farmers in organic certification and sustainable agriculture practices.', image: IMAGES.u3 },
             ].map((event, idx) => (
               <div key={idx} className="group border border-gray-100 rounded-xl overflow-hidden hover:shadow-md transition-all">
                 <div className="aspect-[16/10] overflow-hidden">

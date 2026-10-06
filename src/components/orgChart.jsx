@@ -18,37 +18,37 @@ const teams = [
   {
     title: "Activity Core Team #1",
     subtitle: "Education & Career Guidance",
-    lead: "Mr. Chetan Guroda",
+    // lead: "Mr. Chetan Guroda",
     members: 5,
   },
   {
     title: "Activity Core Team #2",
     subtitle: "Social Awareness",
-    lead: "Dr. Sunil Parhad",
+    // lead: "Dr. Sunil Parhad",
     members: 5,
   },
   {
     title: "Activity Core Team #3",
     subtitle: "Social Entrepreneurship",
-    lead: "Mr. Pranjan Raut",
+    // lead: "Mr. Pranjan Raut",
     members: 5,
   },
   {
     title: "Activity Core Team #4",
     subtitle: "Warli Painting Cluster Development",
-    lead: "Mr. Sachin Satvi",
+    // lead: "Mr. Sachin Satvi",
     members: 5,
   },
   {
     title: "Activity Core Team #5",
     subtitle: "Organizational Development",
-    lead: "Mr. Vipul Bharsat",
+    // lead: "Mr. Vipul Bharsat",
     members: 5,
   },
   {
     title: "Activity Core Team #6",
     subtitle: "Traditional Knowledge & IPR",
-    lead: "Mrs. Shaila Diwe",
+    // lead: "Mrs. Shaila Diwe",
     members: 5,
   },
 ];
@@ -167,9 +167,9 @@ export default function OrganizationChart() {
 
     <div className="text-center py-8">
 
-      <p className="text-xs uppercase tracking-[0.2em] text-gray-400 font-medium">
+      {/* <p className="text-xs uppercase tracking-[0.2em] text-gray-400 font-medium">
         Team Head
-      </p>
+      </p> */}
 
       <div className="w-16 h-16 rounded-full border-2 border-gray-300 bg-gray-100 flex items-center justify-center mx-auto mt-3">
         <User className="w-8 h-8 text-gray-500" />
